@@ -1,0 +1,606 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology rdf:about="http://www.example.com/ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.com/ontology#Base -->
+
+    <Class rdf:about="http://www.example.com/ontology#Base"/>
+    
+
+
+    <!-- http://www.example.com/ontology#Business -->
+
+    <Class rdf:about="http://www.example.com/ontology#Business"/>
+    
+
+
+    <!-- http://www.example.com/ontology#CheeseToppings -->
+
+    <Class rdf:about="http://www.example.com/ontology#CheeseToppings">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#PizzaToppings"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#CookingEquipment -->
+
+    <Class rdf:about="http://www.example.com/ontology#CookingEquipment"/>
+    
+
+
+    <!-- http://www.example.com/ontology#Course -->
+
+    <Class rdf:about="http://www.example.com/ontology#Course">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Food"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#Culture -->
+
+    <Class rdf:about="http://www.example.com/ontology#Culture"/>
+    
+
+
+    <!-- http://www.example.com/ontology#Delivery -->
+
+    <Class rdf:about="http://www.example.com/ontology#Delivery">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Process"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#Dish -->
+
+    <Class rdf:about="http://www.example.com/ontology#Dish">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Food"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#Dough -->
+
+    <Class rdf:about="http://www.example.com/ontology#Dough"/>
+    
+
+
+    <!-- http://www.example.com/ontology#Eaten -->
+
+    <Class rdf:about="http://www.example.com/ontology#Eaten">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Process"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#Food -->
+
+    <Class rdf:about="http://www.example.com/ontology#Food"/>
+    
+
+
+    <!-- http://www.example.com/ontology#Form -->
+
+    <Class rdf:about="http://www.example.com/ontology#Form">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Food"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#FrozenFood -->
+
+    <Class rdf:about="http://www.example.com/ontology#FrozenFood">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Product"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#FruitToppings -->
+
+    <Class rdf:about="http://www.example.com/ontology#FruitToppings">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#PizzaToppings"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#HerbAndSpiceToppings -->
+
+    <Class rdf:about="http://www.example.com/ontology#HerbAndSpiceToppings">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#PizzaToppings"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#Ingredients -->
+
+    <Class rdf:about="http://www.example.com/ontology#Ingredients">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Food"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#Italian -->
+
+    <Class rdf:about="http://www.example.com/ontology#Italian">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Culture"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#Market -->
+
+    <Class rdf:about="http://www.example.com/ontology#Market">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Business"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#MeatToppings -->
+
+    <Class rdf:about="http://www.example.com/ontology#MeatToppings">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#PizzaToppings"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#OtherToppings -->
+
+    <Class rdf:about="http://www.example.com/ontology#OtherToppings">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#PizzaToppings"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#Oven -->
+
+    <Class rdf:about="http://www.example.com/ontology#Oven">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#CookingEquipment"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#PizzaBase -->
+
+    <Class rdf:about="http://www.example.com/ontology#PizzaBase">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Base"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#PizzaToppings -->
+
+    <Class rdf:about="http://www.example.com/ontology#PizzaToppings">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Toppings"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#Preparation -->
+
+    <Class rdf:about="http://www.example.com/ontology#Preparation">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Food"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#Process -->
+
+    <Class rdf:about="http://www.example.com/ontology#Process"/>
+    
+
+
+    <!-- http://www.example.com/ontology#Product -->
+
+    <Class rdf:about="http://www.example.com/ontology#Product"/>
+    
+
+
+    <!-- http://www.example.com/ontology#Restaurants -->
+
+    <Class rdf:about="http://www.example.com/ontology#Restaurants">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Business"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#SauceToppings -->
+
+    <Class rdf:about="http://www.example.com/ontology#SauceToppings">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#PizzaToppings"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#SeafoodToppings -->
+
+    <Class rdf:about="http://www.example.com/ontology#SeafoodToppings">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#PizzaToppings"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#Temperature -->
+
+    <Class rdf:about="http://www.example.com/ontology#Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Food"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#Toppings -->
+
+    <Class rdf:about="http://www.example.com/ontology#Toppings"/>
+    
+
+
+    <!-- http://www.example.com/ontology#Variations -->
+
+    <Class rdf:about="http://www.example.com/ontology#Variations">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Food"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#VegetableToppings -->
+
+    <Class rdf:about="http://www.example.com/ontology#VegetableToppings">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#PizzaToppings"/>
+    </Class>
+    
+
+
+    <!-- http://www.example.com/ontology#Wheat-based -->
+
+    <Class rdf:about="http://www.example.com/ontology#Wheat-based">
+        <rdfs:subClassOf rdf:resource="http://www.example.com/ontology#Dough"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.example.com/ontology#Anchovies -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Anchovies">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Ingredients"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Baked -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Baked">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Preparation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Calzone -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Calzone">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Dish"/>
+        <rdf:type rdf:resource="http://www.example.com/ontology#Italian"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#CalzoneDough -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#CalzoneDough">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Wheat-based"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Cheese -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Cheese">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Ingredients"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Cooked -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Cooked">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Preparation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Cut -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Cut">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Preparation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Dinner -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Dinner">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Course"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Flatbread -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Flatbread">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Form"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Frozen -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Frozen">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Form"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#FrozenPizza -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#FrozenPizza">
+        <rdf:type rdf:resource="http://www.example.com/ontology#FrozenFood"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Hot -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Hot">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Temperature"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Leavened -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Leavened">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Form"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#LeavenedWheat-basedDough -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#LeavenedWheat-basedDough">
+        <rdf:type rdf:resource="http://www.example.com/ontology#PizzaBase"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Lunch -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Lunch">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Course"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Making -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Making">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Preparation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Meat -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Meat">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Ingredients"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Mozzarella -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Mozzarella">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Ingredients"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Mushrooms -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Mushrooms">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Ingredients"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Neapolitan -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Neapolitan">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Italian"/>
+        <rdf:type rdf:resource="http://www.example.com/ontology#Variations"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Olives -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Olives">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Ingredients"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Onions -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Onions">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Ingredients"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Pizza -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Pizza">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Dish"/>
+        <rdf:type rdf:resource="http://www.example.com/ontology#Italian"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#PizzaDough -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#PizzaDough">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Wheat-based"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Pizzerias -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Pizzerias">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Restaurants"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Round -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Round">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Form"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Sauce -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Sauce">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Ingredients"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Slices -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Slices">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Form"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Speciality -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Speciality">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Variations"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#  -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Specialty">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Variations"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#SpecialtyRestaurants -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#SpecialtyRestaurants">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Restaurants"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Tomatoes -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Tomatoes">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Ingredients"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Topped -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Topped">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Preparation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Traditional -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Traditional">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Variations"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Unsliced -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Unsliced">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Variations"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Variants -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Variants">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Market"/>
+        <rdf:type rdf:resource="http://www.example.com/ontology#Variations"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Vegan -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Vegan">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Variations"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Vegetables -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Vegetables">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Ingredients"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Wood-firedOven -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Wood-firedOven">
+        <rdf:type rdf:resource="http://www.example.com/ontology#Oven"/>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
