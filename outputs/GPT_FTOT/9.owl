@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#Geographic_Information_System" />
+    <owl:Class
+        rdf:about="#Freight_and_Fuel_Transportation_Optimization_Tool" />
+    <owl:Class
+        rdf:about="#FTOT_User_Guide" />
+    <owl:Class rdf:about="#Scenario_XML_Elements" />
+    <owl:Class
+        rdf:about="#Troubleshooting" />
+    <owl:Class rdf:about="#Known_Bugs_and_Issues" />
+    <owl:Class
+        rdf:about="#Acknowledgements" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#FTOT_Supplementary_Tools">
+        <rdfs:subClassOf rdf:resource="#Freight_and_Fuel_Transportation_Optimization_Tool" />
+    </owl:Class>  <!--
+    Individuals -->
+    <owl:NamedIndividual
+        rdf:about="#Geographic_Information_System">
+        <rdf:type rdf:resource="#Geographic_Information_System" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#xml_tool">
+        <rdf:type rdf:resource="#FTOT_Supplementary_Tools" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#bat_tool">
+        <rdf:type rdf:resource="#FTOT_Supplementary_Tools" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#scenario_compare_tool">
+        <rdf:type rdf:resource="#FTOT_Supplementary_Tools" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#aggregate_raster_data">
+        <rdf:type rdf:resource="#FTOT_Supplementary_Tools" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#generate_template_csv_files">
+        <rdf:type rdf:resource="#FTOT_Supplementary_Tools" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#breakpoint">
+        <rdf:type rdf:resource="#FTOT_Supplementary_Tools" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#replace_xml_text">
+        <rdf:type rdf:resource="#FTOT_Supplementary_Tools" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#network_disruption_tool">
+        <rdf:type rdf:resource="#FTOT_Supplementary_Tools" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#Public_Release_Version_2022.2">
+        <rdf:type rdf:resource="#FTOT_User_Guide" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#Scenario_Schema_Version">
+        <rdf:type rdf:resource="#Scenario_XML_Elements" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#Scenario_Name">
+        <rdf:type rdf:resource="#Scenario_XML_Elements" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#Scenario_Description">
+        <rdf:type rdf:resource="#Scenario_XML_Elements" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#Scenario_Inputs">
+        <rdf:type rdf:resource="#Scenario_XML_Elements" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#Assumptions">
+        <rdf:type rdf:resource="#Scenario_XML_Elements" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#Create_Network_Layer_Script">
+        <rdf:type rdf:resource="#Scenario_XML_Elements" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#Route_Optimization_Script">
+        <rdf:type rdf:resource="#Scenario_XML_Elements" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#Issue_Action">
+        <rdf:type rdf:resource="#Troubleshooting" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#Errors_with_very_large_numbers">
+        <rdf:type rdf:resource="#Known_Bugs_and_Issues" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#U.S._Federal_Aviation_Administration_Office_of_Environment_and_Energy">
+        <rdf:type rdf:resource="#Acknowledgements" />
+    </owl:NamedIndividual>
+
+</rdf:RDF>

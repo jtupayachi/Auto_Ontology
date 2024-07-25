@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology rdf:about="http://www.example.com/ontology" />
+    <!-- States -->
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#FreightAnalysisFramework" />
+    <owl:Class rdf:about="#Data" />
+    <owl:Class rdf:about="#Area" />
+    <owl:Class rdf:about="#CFS" />
+    <owl:Class rdf:about="#City" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#Data">
+        <rdfs:subClassOf rdf:resource="#FreightAnalysisFramework" />
+    </owl:Class>
+    <owl:Class rdf:about="#Area">
+        <rdfs:subClassOf rdf:resource="#FreightAnalysisFramework" />
+    </owl:Class>
+    <owl:Class rdf:about="#CFS">
+        <rdfs:subClassOf rdf:resource="#FreightAnalysisFramework" />
+    </owl:Class>
+    <owl:Class rdf:about="#City">
+        <rdfs:subClassOf rdf:resource="#FreightAnalysisFramework" />
+    </owl:Class>  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#183FortWayne-Huntington-AuburnINCFSArea">
+        <rdf:type rdf:resource="#Data" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#189RemainderofIndianaINR">
+        <rdf:type rdf:resource="#Data" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#190IowaIAS">
+        <rdf:type rdf:resource="#Data" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#201KansasCity-OverlandPark-KansasCityMO-KSCFSArea">
+        <rdf:type rdf:resource="#Data" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#202Wichita-ArkansasCity-WinfieldKSCFSArea">
+        <rdf:type rdf:resource="#Data" />
+    </owl:NamedIndividual> <!-- ... continue for all
+    individuals in Data -->
+    <owl:NamedIndividual rdf:about="#INCFSArea">
+        <rdf:type rdf:resource="#Area" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#KSCFSArea">
+        <rdf:type rdf:resource="#Area" />
+    </owl:NamedIndividual> <!-- ... continue for all
+    individuals in Area -->
+    <owl:NamedIndividual rdf:about="#FortWayne-Huntington-Auburn">
+        <rdf:type rdf:resource="#CFS" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#KansasCity-OverlandPark-KansasCity">
+        <rdf:type rdf:resource="#CFS" />
+    </owl:NamedIndividual> <!-- ... continue for all
+    individuals in CFS -->
+    <owl:NamedIndividual rdf:about="#FortWayne">
+        <rdf:type rdf:resource="#City" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Huntington">
+        <rdf:type rdf:resource="#City" />
+    </owl:NamedIndividual>
+
+
+</rdf:RDF>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+    <!-- ANALYZING A SCENARIO -->
+
+<owl:Class rdf:about="#TransportationTools" />
+    \n<owl:Class rdf:about="#TransportationElements" />\n<owl:Class rdf:about="#DataRepresentation" />
+    \n<owl:Class rdf:about="#TransportationConditions" />\n<owl:Class
+        rdf:about="#TransportationModes" />\n<owl:Class rdf:about="#ProcessImprovement" />\n\n<!--
+    Subclasses -->\n<owl:Class
+        rdf:about="#OptimizationTools">\n <rdfs:subClassOf rdf:resource="#TransportationTools" />\n</owl:Class>
+    \n<owl:Class rdf:about="#GeographicInformationSystems">\n <rdfs:subClassOf
+            rdf:resource="#TransportationTools" />\n</owl:Class>\n<owl:Class
+        rdf:about="#PhysicalStructures">\n <rdfs:subClassOf rdf:resource="#TransportationElements" />
+    \n</owl:Class>\n<owl:Class rdf:about="#ProcessingEntities">\n <rdfs:subClassOf
+            rdf:resource="#TransportationElements" />\n</owl:Class>\n<owl:Class
+        rdf:about="#TransportationEndpoints">\n <rdfs:subClassOf
+            rdf:resource="#TransportationElements" />\n</owl:Class>\n<owl:Class
+        rdf:about="#TransportationPaths">\n <rdfs:subClassOf rdf:resource="#TransportationElements" />
+    \n</owl:Class>\n<owl:Class rdf:about="#VisualData">\n <rdfs:subClassOf
+            rdf:resource="#DataRepresentation" />\n</owl:Class>\n<owl:Class
+        rdf:about="#SpecificConditions">\n <rdfs:subClassOf rdf:resource="#TransportationConditions" />
+    \n</owl:Class>\n<owl:Class rdf:about="#MultipleModes">\n <rdfs:subClassOf
+            rdf:resource="#TransportationModes" />\n</owl:Class>\n<owl:Class
+        rdf:about="#EffectivenessEnhancement">\n <rdfs:subClassOf rdf:resource="#ProcessImprovement" />
+    \n</owl:Class>\n\n<!-- Individuals -->\n<owl:NamedIndividual rdf:about="#FTOT">\n <rdf:type
+            rdf:resource="#OptimizationTools" />\n</owl:NamedIndividual>\n<owl:NamedIndividual
+        rdf:about="#ArcGIS">\n <rdf:type rdf:resource="#GeographicInformationSystems" />\n</owl:NamedIndividual>
+    \n<owl:NamedIndividual rdf:about="#Facilities">\n <rdf:type rdf:resource="#PhysicalStructures" />
+    \n</owl:NamedIndividual>\n<owl:NamedIndividual rdf:about="#Processors">\n <rdf:type
+            rdf:resource="#ProcessingEntities" />\n</owl:NamedIndividual>\n<owl:NamedIndividual
+        rdf:about="#ProcessorCandidates">\n <rdf:type rdf:resource="#ProcessingEntities" />\n</owl:NamedIndividual>
+    \n<owl:NamedIndividual rdf:about="#Destinations">\n <rdf:type
+            rdf:resource="#TransportationEndpoints" />\n</owl:NamedIndividual>\n<owl:NamedIndividual
+        rdf:about="#Routes">\n <rdf:type rdf:resource="#TransportationPaths" />\n</owl:NamedIndividual>
+    \n<owl:NamedIndividual rdf:about="#Maps">\n <rdf:type rdf:resource="#VisualData" />\n</owl:NamedIndividual>
+    \n<owl:NamedIndividual rdf:about="#Scenario">\n <rdf:type rdf:resource="#SpecificConditions" />
+    \n</owl:NamedIndividual>\n<owl:NamedIndividual rdf:about="#Multimodal">\n <rdf:type
+            rdf:resource="#MultipleModes" />\n</owl:NamedIndividual>\n<owl:NamedIndividual
+        rdf:about="#Optimization">\n <rdf:type rdf:resource="#EffectivenessEnhancement" />\n</owl:NamedIndividual>
+
+</rdf:RDF>

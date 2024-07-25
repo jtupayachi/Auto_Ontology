@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Geography Freight Transportation -->
+    <!-- Ontology Declaration -->
+    <owl:Ontology rdf:about="http://www.example.com/ontology" />
+
+
+    <owl:Class rdf:about="#Geography" />
+    <owl:Class rdf:about="#Movement" />
+    <owl:Class rdf:about="#Gateway" />  <!-- Subclasses of Geography -->
+    <owl:Class rdf:about="#Origin">
+        <rdfs:subClassOf rdf:resource="#Geography" />
+    </owl:Class>
+    <owl:Class rdf:about="#Destination">
+        <rdfs:subClassOf rdf:resource="#Geography" />
+    </owl:Class>
+    <owl:Class rdf:about="#Region">
+        <rdfs:subClassOf rdf:resource="#Geography" />
+    </owl:Class>
+    <owl:Class rdf:about="#Zone">
+        <rdfs:subClassOf rdf:resource="#Geography" />
+    </owl:Class>  <!-- Subclasses of Movement -->
+    <owl:Class rdf:about="#DomesticMovement">
+        <rdfs:subClassOf rdf:resource="#Movement" />
+    </owl:Class>
+    <owl:Class rdf:about="#ForeignMovement">
+        <rdfs:subClassOf rdf:resource="#Movement" />
+    </owl:Class>  <!-- Individuals of Origin -->
+    <owl:NamedIndividual rdf:about="#DomesticOrigin">
+        <rdf:type rdf:resource="#Origin" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ForeignOrigin">
+        <rdf:type rdf:resource="#Origin" />
+    </owl:NamedIndividual>  <!-- Individuals of Destination -->
+    <owl:NamedIndividual rdf:about="#DomesticDestination">
+        <rdf:type rdf:resource="#Destination" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ForeignDestination">
+        <rdf:type rdf:resource="#Destination" />
+    </owl:NamedIndividual>  <!-- Individuals of Region -->
+    <owl:NamedIndividual rdf:about="#FAFRegion">
+        <rdf:type rdf:resource="#Region" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ForeignRegion">
+        <rdf:type rdf:resource="#Region" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#State">
+        <rdf:type rdf:resource="#Region" />
+    </owl:NamedIndividual>  <!-- Individuals of Zone -->
+    <owl:NamedIndividual rdf:about="#ZoneEntry">
+        <rdf:type rdf:resource="#Zone" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ZoneExit">
+        <rdf:type rdf:resource="#Zone" />
+    </owl:NamedIndividual>  <!-- Individuals of Domestic
+    Movement -->
+    <owl:NamedIndividual rdf:about="#ExportsDomestic">
+        <rdf:type rdf:resource="#DomesticMovement" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ImportsDomestic">
+        <rdf:type rdf:resource="#DomesticMovement" />
+    </owl:NamedIndividual>  <!-- Individuals of
+    Foreign Movement -->
+    <owl:NamedIndividual rdf:about="#ExportsForeign">
+        <rdf:type rdf:resource="#ForeignMovement" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ImportsForeign">
+        <rdf:type rdf:resource="#ForeignMovement" />
+    </owl:NamedIndividual>  <!-- Individuals of
+    Gateway -->
+    <owl:NamedIndividual rdf:about="#Gateway">
+        <rdf:type rdf:resource="#Gateway" />
+    </owl:NamedIndividual>
+
+</rdf:RDF>

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#Food" />
+    <owl:Class rdf:about="#Business" />
+    <owl:Class rdf:about="#Records" />
+    <owl:Class rdf:about="#Preparation" />
+    <owl:Class rdf:about="#Sales" />
+    <owl:Class rdf:about="#Adjectives" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#Pizza">
+        <rdfs:subClassOf rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class rdf:about="#Ingredients">
+        <rdfs:subClassOf rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class rdf:about="#TypesOfPizza">
+        <rdfs:subClassOf rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class rdf:about="#FoodIndustry">
+        <rdfs:subClassOf rdf:resource="#Business" />
+    </owl:Class>
+    <owl:Class rdf:about="#Roles">
+        <rdfs:subClassOf rdf:resource="#Business" />
+    </owl:Class>
+    <owl:Class rdf:about="#FoodRecords">
+        <rdfs:subClassOf rdf:resource="#Records" />
+    </owl:Class>
+    <owl:Class rdf:about="#CookingMethods">
+        <rdfs:subClassOf rdf:resource="#Preparation" />
+    </owl:Class>
+    <owl:Class rdf:about="#KitchenTools">
+        <rdfs:subClassOf rdf:resource="#Preparation" />
+    </owl:Class>
+    <owl:Class rdf:about="#CommercialTransactions">
+        <rdfs:subClassOf rdf:resource="#Sales" />
+    </owl:Class>
+    <owl:Class rdf:about="#DescriptiveAdjectives">
+        <rdfs:subClassOf rdf:resource="#Adjectives" />
+    </owl:Class>
+    <owl:Class rdf:about="#ComparativeAdjectives">
+        <rdfs:subClassOf rdf:resource="#Adjectives" />
+    </owl:Class>  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#Ottavia">
+        <rdf:type rdf:resource="#Pizza" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Marquinetti">
+        <rdf:type rdf:resource="#Pizza" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#PizzaRoyale007">
+        <rdf:type rdf:resource="#Pizza" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#NinosBellissima">
+        <rdf:type rdf:resource="#Pizza" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#DomenicoCrollasPizza">
+        <rdf:type rdf:resource="#Pizza" />
+    </owl:NamedIndividual> <!-- More individuals can be
+    added in a similar manner -->
+
+</rdf:RDF>

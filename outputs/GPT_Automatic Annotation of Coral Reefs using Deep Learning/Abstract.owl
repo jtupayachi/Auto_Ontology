@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+            <rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+                    xml:base="http://www.example.com/ontology#"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+                <!-- Ontology Declaration -->
+                <owl:Ontology rdf:about="http://www.example.com/ontology"/>
+
+            <!-- Classes -->
+<owl:Class rdf:about="#Technology"/>
+<owl:Class rdf:about="#Methodology"/>
+<owl:Class rdf:about="#MarineStudy"/>
+<owl:Class rdf:about="#Scale"/>
+<owl:Class rdf:about="#Expert"/>
+<owl:Class rdf:about="#Accuracy"/>
+<owl:Class rdf:about="#Quantifying"/>
+
+<!-- Subclasses -->
+<owl:Class rdf:about="#DigitalTechnology">
+    <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+<owl:Class rdf:about="#ImagingTechnology">
+    <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+<owl:Class rdf:about="#DataAcquisitionTechnology">
+    <rdfs:subClassOf rdf:resource="#Technology"/>
+</owl:Class>
+<owl:Class rdf:about="#IdentificationTechnique">
+    <rdfs:subClassOf rdf:resource="#Methodology"/>
+</owl:Class>
+<owl:Class rdf:about="#AnalysisTechnique">
+    <rdfs:subClassOf rdf:resource="#Methodology"/>
+</owl:Class>
+<owl:Class rdf:about="#ClassificationTechnique">
+    <rdfs:subClassOf rdf:resource="#Methodology"/>
+</owl:Class>
+<owl:Class rdf:about="#EcosystemStudy">
+    <rdfs:subClassOf rdf:resource="#MarineStudy"/>
+</owl:Class>
+<owl:Class rdf:about="#SpeciesStudy">
+    <rdfs:subClassOf rdf:resource="#MarineStudy"/>
+</owl:Class>
+<owl:Class rdf:about="#BiodiversityStudy">
+    <rdfs:subClassOf rdf:resource="#MarineStudy"/>
+</owl:Class>
+<owl:Class rdf:about="#Large-scale">
+    <rdfs:subClassOf rdf:resource="#Scale"/>
+</owl:Class>
+
+<!-- Individuals -->
+<owl:NamedIndividual rdf:about="#Automated">
+    <rdf:type rdf:resource="#DigitalTechnology"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Automate">
+    <rdf:type rdf:resource="#DigitalTechnology"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Tools">
+    <rdf:type rdf:resource="#DigitalTechnology"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Images">
+    <rdf:type rdf:resource="#ImagingTechnology"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Imagery">
+    <rdf:type rdf:resource="#ImagingTechnology"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Mosaics">
+    <rdf:type rdf:resource="#ImagingTechnology"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Acquisition">
+    <rdf:type rdf:resource="#DataAcquisitionTechnology"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Identifying">
+    <rdf:type rdf:resource="#IdentificationTechnique"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Detects">
+    <rdf:type rdf:resource="#IdentificationTechnique"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Detecting">
+    <rdf:type rdf:resource="#IdentificationTechnique"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Analysis">
+    <rdf:type rdf:resource="#AnalysisTechnique"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Annotation">
+    <rdf:type rdf:resource="#AnalysisTechnique"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Classification">
+    <rdf:type rdf:resource="#ClassificationTechnique"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Ecosystems">
+    <rdf:type rdf:resource="#EcosystemStudy"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Ecological">
+    <rdf:type rdf:resource="#EcosystemStudy"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Environmental">
+    <rdf:type rdf:resource="#EcosystemStudy"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Species">
+    <rdf:type rdf:resource="#SpeciesStudy"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Biodiversity">
+    <rdf:type rdf:resource="#BiodiversityStudy"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Large-scale">
+    <rdf:type rdf:resource="#Large-scale"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Expert">
+    <rdf:type rdf:resource="#Expert"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Accuracy">
+    <rdf:type rdf:resource="#Accuracy"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Quantifying">
+    <rdf:type rdf:resource="#Quantifying"/>
+</owl:NamedIndividual>
+
+<!-- Individuals with multiple classes -->
+<owl:NamedIndividual rdf:about="#Automated">
+    <rdf:type rdf:resource="#Methodology"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Images">
+    <rdf:type rdf:resource="#DataAcquisitionTechnology"/>
+</owl:NamedIndividual>
+        </rdf:RDF>

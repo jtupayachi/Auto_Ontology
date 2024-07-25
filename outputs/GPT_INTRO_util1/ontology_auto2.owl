@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+        xml:base="http://www.example.com/ontology#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology rdf:about="http://www.example.com/ontology"/>
+
+<!-- Classes -->
+<owl:Class rdf:about="#TransportOptimization"/>
+<owl:Class rdf:about="#FreightIntermodalTransportOptimization"/>
+<owl:Class rdf:about="#TransportElements"/>
+<owl:Class rdf:about="#Route"/>
+<owl:Class rdf:about="#Modal"/>
+<owl:Class rdf:about="#Containers"/>
+<owl:Class rdf:about="#Transshipment"/>
+<owl:Class rdf:about="#Variables"/>
+<owl:Class rdf:about="#Disruptions"/>
+<owl:Class rdf:about="#Shipments"/>
+<owl:Class rdf:about="#Framework"/>
+<owl:Class rdf:about="#Simulations"/>
+<owl:Class rdf:about="#Algorithm"/>
+<owl:Class rdf:about="#Combination"/>
+<owl:Class rdf:about="#Safety"/>
+<owl:Class rdf:about="#Demand"/>
+<owl:Class rdf:about="#Traffic"/>
+<owl:Class rdf:about="#Corridor"/>
+
+<!-- Properties -->
+<owl:ObjectProperty rdf:about="#hasProperty"/>
+
+<!-- Subclasses -->
+<owl:SubClassOf>
+<owl:Class rdf:about="#FreightIntermodalTransportOptimization"/>
+<owl:Class rdf:about="#TransportOptimization"/>
+</owl:SubClassOf>
+
+<!-- Individuals -->
+<owl:NamedIndividual rdf:about="#IntegerProgrammingApproach">
+<rdf:type rdf:resource="#FreightIntermodalTransportOptimization"/>
+<hasProperty rdf:resource="#CostReduction"/>
+<hasProperty rdf:resource="#TimeMinimization"/>
+<hasProperty rdf:resource="#UncertaintyManagement"/>
+<hasProperty rdf:resource="#NetworkDesign"/>
+<hasProperty rdf:resource="#FlowOptimization"/>
+<hasProperty rdf:resource="#EmissionReduction"/>
+<hasProperty rdf:resource="#ProfitMaximization"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IntermodalRoute">
+<rdf:type rdf:resource="#Route"/>
+<hasProperty rdf:resource="#RouteSelection"/>
+<hasProperty rdf:resource="#RouteReconstruction"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TransportationModes">
+<rdf:type rdf:resource="#Modal"/>
+<hasProperty rdf:resource="#ModeSelection"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FreightContainers">
+<rdf:type rdf:resource="#Containers"/>
+<hasProperty rdf:resource="#ContainerManagement"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TransshipmentLocations">
+<rdf:type rdf:resource="#Transshipment"/>
+<hasProperty rdf:resource="#TransshipmentDecision"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TransportationCost">
+<rdf:type rdf:resource="#Variables"/>
+<hasProperty rdf:resource="#CostMinimization"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#OperationalDisruptions">
+<rdf:type rdf:resource="#Disruptions"/>
+<hasProperty rdf:resource="#DisruptionManagement"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HighValueShipments">
+<rdf:type rdf:resource="#Shipments"/>
+<hasProperty rdf:resource="#ProfitMaximization"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#SustainableModelDevelopmentFramework">
+<rdf:type rdf:resource="#Framework"/>
+<hasProperty rdf:resource="#SustainabilityEfforts"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MonteCarloSimulations">
+<rdf:type rdf:resource="#Simulations"/>
+<hasProperty rdf:resource="#UncertaintyManagement"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#GeneticLocalSearchAlgorithm">
+<rdf:type rdf:resource="#Algorithm"/>
+<hasProperty rdf:resource="#Optimization"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IntermodalRouteCombination">
+<rdf:type rdf:resource="#Combination"/>
+<hasProperty rdf:resource="#CostAndTimeOptimization"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#SafetyConsiderations">
+<rdf:type rdf:resource="#Safety"/>
+<hasProperty rdf:resource="#SafetyMaximization"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#DemandUncertainties">
+<rdf:type rdf:resource="#Demand"/>
+<hasProperty rdf:resource="#DemandManagement"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TrafficFlow">
+<rdf:type rdf:resource="#Traffic"/>
+<hasProperty rdf:resource="#TrafficFlowManagement"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#SeaRailIntermodalTransportationCorridor">
+<rdf:type rdf:resource="#Corridor"/>
+<hasProperty rdf:resource="#ProfitMaximization"/>
+</owl:NamedIndividual>
+</rdf:RDF>

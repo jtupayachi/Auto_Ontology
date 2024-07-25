@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#ModeOfTransportation" />
+    <owl:Class rdf:about="#Commodity" />
+    <owl:Class rdf:about="#Geography" />
+    <owl:Class rdf:about="#Cargo" />
+    <owl:Class rdf:about="#Imports" />
+    <owl:Class rdf:about="#Transportation" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#FAF4">
+        <rdfs:subClassOf rdf:resource="#ModeOfTransportation" />
+    </owl:Class>
+    <owl:Class rdf:about="#FAF5">
+        <rdfs:subClassOf rdf:resource="#ModeOfTransportation" />
+    </owl:Class>
+    <owl:Class rdf:about="#Domestic">
+        <rdfs:subClassOf rdf:resource="#Geography" />
+    </owl:Class>
+    <owl:Class rdf:about="#Foreign">
+        <rdfs:subClassOf rdf:resource="#Geography" />
+    </owl:Class>
+    <owl:Class rdf:about="#Intermodal">
+        <rdfs:subClassOf rdf:resource="#Cargo" />
+    </owl:Class>
+    <owl:Class rdf:about="#DomesticTransportation">
+        <rdfs:subClassOf rdf:resource="#Transportation" />
+    </owl:Class>
+    <owl:Class rdf:about="#ImportsTransportation">
+        <rdfs:subClassOf rdf:resource="#Transportation" />
+    </owl:Class>  <!-- Properties -->
+    <owl:ObjectProperty rdf:about="#hasProperty" />  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#DomesticModes">
+        <rdf:type rdf:resource="#FAF4" />
+        <hasProperty rdf:resource="#Origin" />
+        <hasProperty rdf:resource="#Destination" />
+        <hasProperty rdf:resource="#Entry" />
+        <hasProperty rdf:resource="#Departure" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ForeignModes">
+        <rdf:type rdf:resource="#FAF5" />
+        <hasProperty rdf:resource="#Origin" />
+        <hasProperty rdf:resource="#Destination" />
+        <hasProperty rdf:resource="#Entry" />
+        <hasProperty rdf:resource="#Departure" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Goods">
+        <rdf:type rdf:resource="#Commodity" />
+        <hasProperty rdf:resource="#TypeOfCommodity" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FAFRegion">
+        <rdf:type rdf:resource="#Geography" />
+        <hasProperty rdf:resource="#Region" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#State">
+        <rdf:type rdf:resource="#Geography" />
+        <hasProperty rdf:resource="#Region" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ForeignRegion">
+        <rdf:type rdf:resource="#Geography" />
+        <hasProperty rdf:resource="#Region" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ZoneOfEntry">
+        <rdf:type rdf:resource="#Geography" />
+        <hasProperty rdf:resource="#Region" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ZoneOfExit">
+        <rdf:type rdf:resource="#Geography" />
+        <hasProperty rdf:resource="#Region" />
+    </owl:NamedIndividual>
+
+
+</rdf:RDF>

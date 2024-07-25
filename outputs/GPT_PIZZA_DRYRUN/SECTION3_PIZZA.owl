@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#Foods" />
+    <owl:Class rdf:about="#Places" />
+    <owl:Class rdf:about="#People" />
+    <owl:Class rdf:about="#Organizations" />
+    <owl:Class rdf:about="#Concepts" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#Ingredients">
+        <rdfs:subClassOf rdf:resource="#Foods" />
+    </owl:Class>
+    <owl:Class rdf:about="#Dishes">
+        <rdfs:subClassOf rdf:resource="#Foods" />
+    </owl:Class>
+    <owl:Class rdf:about="#Cities">
+        <rdfs:subClassOf rdf:resource="#Places" />
+    </owl:Class>
+    <owl:Class rdf:about="#Establishments">
+        <rdfs:subClassOf rdf:resource="#Places" />
+    </owl:Class>
+    <owl:Class rdf:about="#Professions">
+        <rdfs:subClassOf rdf:resource="#People" />
+    </owl:Class>
+    <owl:Class rdf:about="#Associations">
+        <rdfs:subClassOf rdf:resource="#Organizations" />
+    </owl:Class>
+    <owl:Class rdf:about="#CulturalConcepts">
+        <rdfs:subClassOf rdf:resource="#Concepts" />
+    </owl:Class>
+    <owl:Class rdf:about="#ServiceConcepts">
+        <rdfs:subClassOf rdf:resource="#Concepts" />
+    </owl:Class>  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#Basil">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Cheese">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Oils">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Mozzarella">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Salt">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Tomato">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Garlic">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Herbs">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Tomatoes">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Pizzas">
+        <rdf:type rdf:resource="#Dishes" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Margherita">
+        <rdf:type rdf:resource="#Dishes" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Flatbreads">
+        <rdf:type rdf:resource="#Dishes" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Naples">
+        <rdf:type rdf:resource="#Cities" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Lombardi\'s">
+        <rdf:type rdf:resource="#Establishments" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Pizzeria">
+        <rdf:type rdf:resource="#Establishments" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Pizzerias">
+        <rdf:type rdf:resource="#Establishments" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Shop">
+        <rdf:type rdf:resource="#Establishments" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Pizzaiolo">
+        <rdf:type rdf:resource="#Professions" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#AssociazioneVerace">
+        <rdf:type rdf:resource="#Associations" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Traditional">
+        <rdf:type rdf:resource="#CulturalConcepts" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Authenticity">
+        <rdf:type rdf:resource="#CulturalConcepts" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Service">
+        <rdf:type rdf:resource="#ServiceConcepts" />
+    </owl:NamedIndividual>
+
+</rdf:RDF>

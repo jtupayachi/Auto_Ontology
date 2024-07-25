@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+
+
+    <owl:Class rdf:about="#Food" />
+    <owl:Class
+        rdf:about="#Cooking" />
+    <owl:Class rdf:about="#Geography" />
+    <owl:Class
+        rdf:about="#Service" />
+    <owl:Class rdf:about="#Variety" />  <!-- Subclasses -->
+    <owl:Class
+        rdf:about="#Pizza">
+        <rdfs:subClassOf rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class
+        rdf:about="#Ingredients">
+        <rdfs:subClassOf rdf:resource="#Food" />
+        <rdfs:subClassOf
+            rdf:resource="#Cooking" />
+    </owl:Class>
+    <owl:Class rdf:about="#PreparationMethod">
+        <rdfs:subClassOf
+            rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class rdf:about="#Styles">
+        <rdfs:subClassOf
+            rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class rdf:about="#Toppings">
+        <rdfs:subClassOf
+            rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class rdf:about="#Region">
+        <rdfs:subClassOf
+            rdf:resource="#Food" />
+        <rdfs:subClassOf rdf:resource="#Geography" />
+    </owl:Class>
+    <owl:Class
+        rdf:about="#Preparation">
+        <rdfs:subClassOf rdf:resource="#Cooking" />
+    </owl:Class>
+    <owl:Class
+        rdf:about="#Method">
+        <rdfs:subClassOf rdf:resource="#Cooking" />
+    </owl:Class>
+    <owl:Class
+        rdf:about="#Oil">
+        <rdfs:subClassOf rdf:resource="#Cooking" />
+    </owl:Class>
+    <owl:Class
+        rdf:about="#Sauce">
+        <rdfs:subClassOf rdf:resource="#Cooking" />
+    </owl:Class>
+    <owl:Class
+        rdf:about="#Crust">
+        <rdfs:subClassOf rdf:resource="#Cooking" />
+    </owl:Class>
+    <owl:Class
+        rdf:about="#Italian">
+        <rdfs:subClassOf rdf:resource="#Geography" />
+    </owl:Class>
+    <owl:Class
+        rdf:about="#Served">
+        <rdfs:subClassOf rdf:resource="#Service" />
+    </owl:Class>
+    <owl:Class
+        rdf:about="#Varieties">
+        <rdfs:subClassOf rdf:resource="#Variety" />
+    </owl:Class>  <!--
+    Individuals -->
+    <owl:NamedIndividual
+        rdf:about="#Neapolitan">
+        <rdf:type rdf:resource="#Pizza" />
+        <rdf:type
+            rdf:resource="#Styles" />
+        <rdf:type rdf:resource="#Italian" />
+        <rdf:type
+            rdf:resource="#Served" />
+        <rdf:type rdf:resource="#Varieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Margherita">
+        <rdf:type rdf:resource="#Pizza" />
+        <rdf:type
+            rdf:resource="#Styles" />
+        <rdf:type rdf:resource="#Served" />
+        <rdf:type
+            rdf:resource="#Varieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#Marinara">
+        <rdf:type rdf:resource="#Pizza" />
+        <rdf:type
+            rdf:resource="#Sauce" />
+        <rdf:type rdf:resource="#Varieties" />
+    </owl:NamedIndividual>
+
+
+</rdf:RDF>

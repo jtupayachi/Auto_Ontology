@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology rdf:about="http://www.example.com/ontology" />
+
+    <!-- Statistics Transportation -->
+    <!-- Classes -->
+    <owl:Class rdf:about="#Statistics" />
+    <owl:Class rdf:about="#Transportation" />
+    <owl:Class rdf:about="#Commodity" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#FAF5">
+        <rdfs:subClassOf rdf:resource="#Statistics" />
+    </owl:Class>
+    <owl:Class rdf:about="#Shipments">
+        <rdfs:subClassOf rdf:resource="#Statistics" />
+    </owl:Class>
+    <owl:Class rdf:about="#Modes">
+        <rdfs:subClassOf rdf:resource="#Statistics" />
+    </owl:Class>
+    <owl:Class rdf:about="#Geographies">
+        <rdfs:subClassOf rdf:resource="#Statistics" />
+    </owl:Class>
+    <owl:Class rdf:about="#Worksheets">
+        <rdfs:subClassOf rdf:resource="#Statistics" />
+    </owl:Class>
+    <owl:Class rdf:about="#Measures">
+        <rdfs:subClassOf rdf:resource="#Statistics" />
+    </owl:Class>
+    <owl:Class rdf:about="#Origin-Destination Pairs">
+        <rdfs:subClassOf rdf:resource="#Transportation" />
+    </owl:Class>
+    <owl:Class rdf:about="#Trade Partners">
+        <rdfs:subClassOf rdf:resource="#Transportation" />
+    </owl:Class>
+    <owl:Class rdf:about="#Flows">
+        <rdfs:subClassOf rdf:resource="#Transportation" />
+    </owl:Class>
+    <owl:Class rdf:about="#Top Ten Commodities by Tonnage Value">
+        <rdfs:subClassOf rdf:resource="#Commodity" />
+    </owl:Class>
+    <owl:Class rdf:about="#Tonnage">
+        <rdfs:subClassOf rdf:resource="#Commodity" />
+    </owl:Class>
+    <owl:Class rdf:about="#Value">
+        <rdfs:subClassOf rdf:resource="#Commodity" />
+    </owl:Class>  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#Summary Statistics">
+        <rdf:type rdf:resource="#FAF5" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Base-year">
+        <rdf:type rdf:resource="#FAF5" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Historical years">
+        <rdf:type rdf:resource="#FAF5" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Domestic Shipments">
+        <rdf:type rdf:resource="#Shipments" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Foreign Shipments">
+        <rdf:type rdf:resource="#Shipments" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Modes of Transportation">
+        <rdf:type rdf:resource="#Modes" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Domestic Origins">
+        <rdf:type rdf:resource="#Geographies" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Domestic Destinations">
+        <rdf:type rdf:resource="#Geographies" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#State">
+        <rdf:type rdf:resource="#Geographies" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FAF zone">
+        <rdf:type rdf:resource="#Geographies" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Tonnage Value for Shipments">
+        <rdf:type rdf:resource="#Worksheets" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Top Ten Commodities by Tonnage Value">
+        <rdf:type rdf:resource="#Worksheets" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Top Five Trade Partners by Tonnage Value">
+        <rdf:type rdf:resource="#Worksheets" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Top 50 Origin-Destination Pairs by Tonnage Value">
+        <rdf:type rdf:resource="#Worksheets" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Tonnage">
+        <rdf:type rdf:resource="#Measures" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Value">
+        <rdf:type rdf:resource="#Measures" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Origin">
+        <rdf:type rdf:resource="#Origin-Destination Pairs" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Destination">
+        <rdf:type rdf:resource="#Origin-Destination Pairs" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Total Flows">
+        <rdf:type rdf:resource="#Flows" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Imported Shipments">
+        <rdf:type rdf:resource="#Flows" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Exported Shipments">
+        <rdf:type rdf:resource="#Flows" />
+    </owl:NamedIndividual>
+
+
+</rdf:RDF>

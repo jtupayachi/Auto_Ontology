@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology rdf:about="http://www.example.com/ontology" />
+
+    <!-- Codes and Data Dictionary -->
+
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#InformationManagement" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#DataOrganization">
+        <rdfs:subClassOf rdf:resource="#InformationManagement" />
+    </owl:Class>
+    <owl:Class rdf:about="#DataAnalysis">
+        <rdfs:subClassOf rdf:resource="#InformationManagement" />
+    </owl:Class>
+    <owl:Class rdf:about="#DataStructure">
+        <rdfs:subClassOf rdf:resource="#InformationManagement" />
+    </owl:Class>
+    <owl:Class rdf:about="#LogisticsManagement">
+        <rdfs:subClassOf rdf:resource="#InformationManagement" />
+    </owl:Class>  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#CodeTables">
+        <rdf:type rdf:resource="#DataOrganization" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#DataDictionary">
+        <rdf:type rdf:resource="#DataOrganization" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Analysis">
+        <rdf:type rdf:resource="#DataAnalysis" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Data">
+        <rdf:type rdf:resource="#DataStructure" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Framework">
+        <rdf:type rdf:resource="#DataStructure" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Freight">
+        <rdf:type rdf:resource="#LogisticsManagement" />
+    </owl:NamedIndividual>
+
+</rdf:RDF>

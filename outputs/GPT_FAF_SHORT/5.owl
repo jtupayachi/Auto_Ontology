@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#Goods" />
+    <owl:Class
+        rdf:about="#Exports" />
+    <owl:Class rdf:about="#Imports" />
+    <owl:Class
+        rdf:about="#ModeOfTransportation" />
+    <owl:Class rdf:about="#Rail" />
+    <owl:Class
+        rdf:about="#Water" />
+    <owl:Class rdf:about="#DomesticMode" />
+    <owl:Class rdf:about="#Truck" />
+    <owl:Class
+        rdf:about="#Air" />
+    <owl:Class rdf:about="#Pipeline" />
+    <owl:Class rdf:about="#MultipleModes" />
+    <owl:Class
+        rdf:about="#Unknown" />
+    <owl:Class rdf:about="#Freight" />
+    <owl:Class
+        rdf:about="#Containerized" />
+    <owl:Class rdf:about="#Shipments" />
+    <owl:Class
+        rdf:about="#DataSource" />
+    <owl:Class rdf:about="#FAF" />
+    <owl:Class rdf:about="#Tool" />
+    <owl:Class
+        rdf:about="#DataDictionary" />
+    <owl:Class rdf:about="#Tables" />
+    <owl:Class
+        rdf:about="#CodeTables" />  <!-- Properties -->
+    <owl:ObjectProperty rdf:about="#hasProperty" />  <!-- Subclasses -->
+    <owl:SubClassOf>
+        <owl:Class rdf:about="#Exports" />
+        <owl:Class rdf:about="#Goods" />
+    </owl:SubClassOf>
+    <owl:SubClassOf>
+        <owl:Class rdf:about="#Imports" />
+        <owl:Class rdf:about="#Goods" />
+    </owl:SubClassOf> <!-- and so on for all subclasses -->  <!-- Individuals -->
+    <owl:NamedIndividual
+        rdf:about="#CommonCarrier">
+        <rdf:type rdf:resource="#Rail" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#PrivateRailroad">
+        <rdf:type rdf:resource="#Rail" />
+    </owl:NamedIndividual> <!-- and so on for all
+    individuals -->  <!-- Properties for Classes -->
+    <owl:Class rdf:about="#Exports">
+        <hasProperty rdf:resource="#SentToAnotherCountry" />
+    </owl:Class>
+    <owl:Class
+        rdf:about="#Imports">
+        <hasProperty rdf:resource="#BroughtIntoACountry" />
+    </owl:Class> <!-- and so on for all
+    classes with properties -->
+</rdf:RDF>

@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+            <rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+                    xml:base="http://www.example.com/ontology#"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+                <!-- Ontology Declaration -->
+                <owl:Ontology rdf:about="http://www.example.com/ontology"/>
+
+            <!-- Classes -->
+<owl:Class rdf:about="#MachineLearningConcepts"/>
+<owl:Class rdf:about="#MarineBiologyConcepts"/>
+<owl:Class rdf:about="#EnvironmentalManagement"/>
+<owl:Class rdf:about="#MachineLearningApplication"/>
+
+<!-- Subclasses -->
+<owl:Class rdf:about="#NeuralNetworks">
+    <rdfs:subClassOf rdf:resource="#MachineLearningConcepts"/>
+</owl:Class>
+<owl:Class rdf:about="#EvaluationMetrics">
+    <rdfs:subClassOf rdf:resource="#MachineLearningConcepts"/>
+</owl:Class>
+<owl:Class rdf:about="#DataHandling">
+    <rdfs:subClassOf rdf:resource="#MachineLearningConcepts"/>
+</owl:Class>
+<owl:Class rdf:about="#ClassificationConcepts">
+    <rdfs:subClassOf rdf:resource="#MachineLearningConcepts"/>
+</owl:Class>
+<owl:Class rdf:about="#AnalysisTechniques">
+    <rdfs:subClassOf rdf:resource="#MachineLearningConcepts"/>
+</owl:Class>
+<owl:Class rdf:about="#Outputs">
+    <rdfs:subClassOf rdf:resource="#MachineLearningConcepts"/>
+</owl:Class>
+<owl:Class rdf:about="#MarineSpecies">
+    <rdfs:subClassOf rdf:resource="#MarineBiologyConcepts"/>
+</owl:Class>
+<owl:Class rdf:about="#MarineEcosystems">
+    <rdfs:subClassOf rdf:resource="#MarineBiologyConcepts"/>
+</owl:Class>
+<owl:Class rdf:about="#MarineImagery">
+    <rdfs:subClassOf rdf:resource="#MarineBiologyConcepts"/>
+</owl:Class>
+<owl:Class rdf:about="#MarineResearchTools">
+    <rdfs:subClassOf rdf:resource="#MarineBiologyConcepts"/>
+</owl:Class>
+<owl:Class rdf:about="#MarineResearchTechniques">
+    <rdfs:subClassOf rdf:resource="#MarineBiologyConcepts"/>
+</owl:Class>
+<owl:Class rdf:about="#ManagementStrategies">
+    <rdfs:subClassOf rdf:resource="#EnvironmentalManagement"/>
+</owl:Class>
+<owl:Class rdf:about="#Framework">
+    <rdfs:subClassOf rdf:resource="#MachineLearningApplication"/>
+</owl:Class>
+
+<!-- Individuals -->
+<owl:NamedIndividual rdf:about="#CNN">
+    <rdf:type rdf:resource="#NeuralNetworks"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#VGGnet">
+    <rdf:type rdf:resource="#NeuralNetworks"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Accuracy">
+    <rdf:type rdf:resource="#EvaluationMetrics"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Performance">
+    <rdf:type rdf:resource="#EvaluationMetrics"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Dataset">
+    <rdf:type rdf:resource="#DataHandling"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Train">
+    <rdf:type rdf:resource="#DataHandling"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Test">
+    <rdf:type rdf:resource="#DataHandling"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Classification">
+    <rdf:type rdf:resource="#ClassificationConcepts"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Misclassification">
+    <rdf:type rdf:resource="#ClassificationConcepts"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Labels">
+    <rdf:type rdf:resource="#ClassificationConcepts"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Analysis">
+    <rdf:type rdf:resource="#AnalysisTechniques"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Outputs">
+    <rdf:type rdf:resource="#Outputs"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Corals">
+    <rdf:type rdf:resource="#MarineSpecies"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Non-corals">
+    <rdf:type rdf:resource="#MarineSpecies"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Species">
+    <rdf:type rdf:resource="#MarineSpecies"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Ecosystems">
+    <rdf:type rdf:resource="#MarineEcosystems"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Images">
+    <rdf:type rdf:resource="#MarineImagery"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Imagery">
+    <rdf:type rdf:resource="#MarineImagery"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Mosaics">
+    <rdf:type rdf:resource="#MarineImagery"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Maps">
+    <rdf:type rdf:resource="#MarineImagery"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#AUVs">
+    <rdf:type rdf:resource="#MarineResearchTools"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Experiments">
+    <rdf:type rdf:resource="#MarineResearchTechniques"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Annotated">
+    <rdf:type rdf:resource="#MarineResearchTechniques"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Boundaries">
+    <rdf:type rdf:resource="#MarineResearchTechniques"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Ground-truth">
+    <rdf:type rdf:resource="#MarineResearchTechniques"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Strategies">
+    <rdf:type rdf:resource="#ManagementStrategies"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Framework">
+    <rdf:type rdf:resource="#Framework"/>
+</owl:NamedIndividual>
+        </rdf:RDF>

@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+        xml:base="http://www.example.com/ontology#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology rdf:about="http://www.example.com/ontology"/>
+
+<!-- Classes -->
+<owl:Class rdf:about="#Transport"/>
+<owl:Class rdf:about="#IntermodalTransport"/>
+<owl:Class rdf:about="#Decarbonization"/>
+<owl:Class rdf:about="#CarbonPolicies"/>
+<owl:Class rdf:about="#SupplyChain"/>
+<owl:Class rdf:about="#SustainableSupplyChain"/>
+<owl:Class rdf:about="#Optimization"/>
+<owl:Class rdf:about="#TransportOptimization"/>
+<owl:Class rdf:about="#RoutingOptimization"/>
+<owl:Class rdf:about="#NetworkDesignOptimization"/>
+<owl:Class rdf:about="#Locations"/>
+<owl:Class rdf:about="#GeographicalLocations"/>
+<owl:Class rdf:about="#Constraints"/>
+<owl:Class rdf:about="#TimeConstraints"/>
+<owl:Class rdf:about="#Services"/>
+<owl:Class rdf:about="#FreightServices"/>
+<owl:Class rdf:about="#Parameters"/>
+<owl:Class rdf:about="#EmissionParameters"/>
+
+<!-- Subclasses -->
+<owl:SubClassOf>
+<owl:Class rdf:about="#IntermodalTransport"/>
+<owl:Class rdf:about="#Transport"/>
+</owl:SubClassOf>
+<owl:SubClassOf>
+<owl:Class rdf:about="#CarbonPolicies"/>
+<owl:Class rdf:about="#Decarbonization"/>
+</owl:SubClassOf>
+<owl:SubClassOf>
+<owl:Class rdf:about="#SustainableSupplyChain"/>
+<owl:Class rdf:about="#SupplyChain"/>
+</owl:SubClassOf>
+<owl:SubClassOf>
+<owl:Class rdf:about="#TransportOptimization"/>
+<owl:Class rdf:about="#Optimization"/>
+</owl:SubClassOf>
+<owl:SubClassOf>
+<owl:Class rdf:about="#RoutingOptimization"/>
+<owl:Class rdf:about="#Optimization"/>
+</owl:SubClassOf>
+<owl:SubClassOf>
+<owl:Class rdf:about="#NetworkDesignOptimization"/>
+<owl:Class rdf:about="#Optimization"/>
+</owl:SubClassOf>
+<owl:SubClassOf>
+<owl:Class rdf:about="#GeographicalLocations"/>
+<owl:Class rdf:about="#Locations"/>
+</owl:SubClassOf>
+<owl:SubClassOf>
+<owl:Class rdf:about="#TimeConstraints"/>
+<owl:Class rdf:about="#Constraints"/>
+</owl:SubClassOf>
+<owl:SubClassOf>
+<owl:Class rdf:about="#FreightServices"/>
+<owl:Class rdf:about="#Services"/>
+</owl:SubClassOf>
+<owl:SubClassOf>
+<owl:Class rdf:about="#EmissionParameters"/>
+<owl:Class rdf:about="#Parameters"/>
+</owl:SubClassOf>
+
+<!-- Properties -->
+<owl:ObjectProperty rdf:about="#hasProperty"/>
+
+<!-- Individuals -->
+<owl:NamedIndividual rdf:about="#Highway-railway">
+<rdf:type rdf:resource="#IntermodalTransport"/>
+<hasProperty rdf:resource="#Efficiency"/>
+<hasProperty rdf:resource="#Cost-effectiveness"/>
+<hasProperty rdf:resource="#CarbonEmissions"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Freight">
+<rdf:type rdf:resource="#IntermodalTransport"/>
+<hasProperty rdf:resource="#Fixed"/>
+<hasProperty rdf:resource="#Flexible"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Routes">
+<rdf:type rdf:resource="#IntermodalTransport"/>
+<hasProperty rdf:resource="#Optimization"/>
+<hasProperty rdf:resource="#CarbonEmissions"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Modes">
+<rdf:type rdf:resource="#IntermodalTransport"/>
+<hasProperty rdf:resource="#Choice"/>
+<hasProperty rdf:resource="#CarbonEmissions"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#CarbonCapAndTradeScheme">
+<rdf:type rdf:resource="#CarbonPolicies"/>
+<hasProperty rdf:resource="#RiskThreshold"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#CarbonTaxPolicy">
+<rdf:type rdf:resource="#CarbonPolicies"/>
+<hasProperty rdf:resource="#GHGEmissionsMitigation"/>
+<hasProperty rdf:resource="#Efficiency"/>
+<hasProperty rdf:resource="#Cost-effectiveness"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#CarbonOffsetPolicies">
+<rdf:type rdf:resource="#CarbonPolicies"/>
+<hasProperty rdf:resource="#UncertainEmissionParameters"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#IntermodalSupplyChains">
+<rdf:type rdf:resource="#SustainableSupplyChain"/>
+<hasProperty rdf:resource="#Sustainability"/>
+<hasProperty rdf:resource="#Reliability"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#IntermodalTransportOptimization">
+<rdf:type rdf:resource="#TransportOptimization"/>
+<hasProperty rdf:resource="#Time"/>
+<hasProperty rdf:resource="#Cost"/>
+<hasProperty rdf:resource="#CarbonEmissionCost"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#IntermodalRouting">
+<rdf:type rdf:resource="#RoutingOptimization"/>
+<hasProperty rdf:resource="#DeliveryTimeWindows"/>
+<hasProperty rdf:resource="#CarbonTaxPolicy"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#SupplyChainNetworkDesign">
+<rdf:type rdf:resource="#NetworkDesignOptimization"/>
+<hasProperty rdf:resource="#Economic"/>
+<hasProperty rdf:resource="#Environmental"/>
+<hasProperty rdf:resource="#SocialDimensions"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Cities">
+<rdf:type rdf:resource="#GeographicalLocations"/>
+<hasProperty rdf:resource="#CarbonEmissionLimit"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#DeliveryTimeWindows">
+<rdf:type rdf:resource="#TimeConstraints"/>
+<hasProperty rdf:resource="#Strictness"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#FixedFreightServices">
+<rdf:type rdf:resource="#FreightServices"/>
+<hasProperty rdf:resource="#Routing"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#FlexibleFreightServices">
+<rdf:type rdf:resource="#FreightServices"/>
+<hasProperty rdf:resource="#Routing"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#UncertainEmissionParameters">
+<rdf:type rdf:resource="#EmissionParameters"/>
+<hasProperty rdf:resource="#CarbonCap"/>
+<hasProperty rdf:resource="#CarbonTax"/>
+<hasProperty rdf:resource="#CarbonCapAndTrade"/>
+<hasProperty rdf:resource="#CarbonOffsetPolicies"/>
+</owl:NamedIndividual>
+</rdf:RDF>

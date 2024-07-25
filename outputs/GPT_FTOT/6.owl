@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+
+    <!-- RUNNING A SCENARIO -->
+
+    <!-- Classes -->\n<owl:Class
+        rdf:about="#TransportationOptimizationTool" />\n<owl:Class rdf:about="#Database" />\n<owl:Class
+        rdf:about="#Cost" />\n\n<!-- Subclasses -->\n<owl:Class
+        rdf:about="#FreightAndFuelTransportationOptimizationTool">\n <rdfs:subClassOf
+            rdf:resource="#TransportationOptimizationTool" />\n</owl:Class>\n<owl:Class
+        rdf:about="#SQLite">\n <rdfs:subClassOf rdf:resource="#Database" />\n</owl:Class>\n<owl:Class
+        rdf:about="#OptimalObjectiveValue">\n <rdfs:subClassOf rdf:resource="#Cost" />\n</owl:Class>
+    \n<owl:Class rdf:about="#RoutingCost">\n <rdfs:subClassOf rdf:resource="#Cost" />\n</owl:Class>
+</rdf:RDF>

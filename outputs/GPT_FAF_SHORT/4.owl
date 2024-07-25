@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+    <!-- Classes -->
+    <owl:Class rdf:about="#Data" />
+    <owl:Class
+        rdf:about="#FAF5Data" />
+    <owl:Class rdf:about="#TotalFlows" />
+    <owl:Class
+        rdf:about="#DomesticFlows" />
+    <owl:Class rdf:about="#ForeignTradeFlows" />
+    <owl:Class
+        rdf:about="#Mode" />
+    <owl:Class rdf:about="#Region" />
+    <owl:Class rdf:about="#State" />
+    <owl:Class
+        rdf:about="#Zone" />
+    <owl:Class rdf:about="#Shipments" />
+    <owl:Class rdf:about="#Geographies" />
+    <owl:Class
+        rdf:about="#Movements" />
+    <owl:Class rdf:about="#Flows" />
+    <owl:Class rdf:about="#Trade" />  <!--
+    Subclasses -->
+    <owl:SubClassOf
+        rdf:resource="#FAF5Data" />
+    <owl:SubClassOf rdf:resource="#TotalFlows" />
+    <owl:SubClassOf
+        rdf:resource="#DomesticFlows" />
+    <owl:SubClassOf rdf:resource="#ForeignTradeFlows" />
+    <owl:SubClassOf
+        rdf:resource="#Transportation" />
+    <owl:SubClassOf rdf:resource="#FAFRegion" />
+    <owl:SubClassOf
+        rdf:resource="#FAFState" />
+    <owl:SubClassOf rdf:resource="#EntryZone" />
+    <owl:SubClassOf
+        rdf:resource="#ExitZone" />
+    <owl:SubClassOf rdf:resource="#DomesticShipments" />
+    <owl:SubClassOf
+        rdf:resource="#ForeignShipments" />
+    <owl:SubClassOf rdf:resource="#DomesticGeographies" />
+    <owl:SubClassOf
+        rdf:resource="#ForeignGeographies" />
+    <owl:SubClassOf rdf:resource="#DomesticMovements" />
+    <owl:SubClassOf
+        rdf:resource="#ForeignMovements" />
+    <owl:SubClassOf rdf:resource="#DomesticFlows" />
+    <owl:SubClassOf
+        rdf:resource="#ForeignFlows" />
+    <owl:SubClassOf rdf:resource="#ForeignTrade" />  <!--
+    Properties -->
+    <owl:ObjectProperty
+        rdf:about="#hasProperty" />  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#TotalFlows">
+        <rdf:type rdf:resource="#FAF5Data" />
+        <hasProperty rdf:resource="#Origin" />
+        <hasProperty rdf:resource="#Destination" />
+        <hasProperty rdf:resource="#Mode" />
+        <hasProperty rdf:resource="#Region" />
+        <hasProperty rdf:resource="#State" />
+        <hasProperty rdf:resource="#Zone" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#DomesticFlows">
+        <rdf:type rdf:resource="#FAF5Data" />
+        <hasProperty rdf:resource="#Origin" />
+        <hasProperty rdf:resource="#Destination" />
+        <hasProperty rdf:resource="#Mode" />
+        <hasProperty rdf:resource="#Region" />
+        <hasProperty rdf:resource="#State" />
+        <hasProperty rdf:resource="#Zone" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#ForeignTradeFlows">
+        <rdf:type rdf:resource="#FAF5Data" />
+        <hasProperty rdf:resource="#Origin" />
+        <hasProperty rdf:resource="#Destination" />
+        <hasProperty rdf:resource="#Mode" />
+        <hasProperty rdf:resource="#Region" />
+        <hasProperty rdf:resource="#State" />
+        <hasProperty rdf:resource="#Zone" />
+        <hasProperty rdf:resource="#Geographies" />
+    </owl:NamedIndividual>  <!-- More individuals
+    can be added in a similar manner -->
+</rdf:RDF>

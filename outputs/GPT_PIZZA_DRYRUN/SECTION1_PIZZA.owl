@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology rdf:about="http://www.example.com/ontology" />
+
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#Food" />
+    <owl:Class rdf:about="#Process" />
+    <owl:Class rdf:about="#Business" />
+    <owl:Class rdf:about="#Culture" />
+    <owl:Class rdf:about="#CookingEquipment" />
+    <owl:Class rdf:about="#Dough" />
+    <owl:Class rdf:about="#Base" />
+    <owl:Class rdf:about="#Product" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#Dish">
+        <rdfs:subClassOf rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class rdf:about="#Ingredients">
+        <rdfs:subClassOf rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class rdf:about="#Preparation">
+        <rdfs:subClassOf rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class rdf:about="#Variations">
+        <rdfs:subClassOf rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class rdf:about="#Course">
+        <rdfs:subClassOf rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class rdf:about="#Temperature">
+        <rdfs:subClassOf rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class rdf:about="#Form">
+        <rdfs:subClassOf rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class rdf:about="#Delivery">
+        <rdfs:subClassOf rdf:resource="#Process" />
+    </owl:Class>
+    <owl:Class rdf:about="#Eaten">
+        <rdfs:subClassOf rdf:resource="#Process" />
+    </owl:Class>
+    <owl:Class rdf:about="#Restaurants">
+        <rdfs:subClassOf rdf:resource="#Business" />
+    </owl:Class>
+    <owl:Class rdf:about="#Market">
+        <rdfs:subClassOf rdf:resource="#Business" />
+    </owl:Class>
+    <owl:Class rdf:about="#Italian">
+        <rdfs:subClassOf rdf:resource="#Culture" />
+    </owl:Class>
+    <owl:Class rdf:about="#Oven">
+        <rdfs:subClassOf rdf:resource="#CookingEquipment" />
+    </owl:Class>
+    <owl:Class rdf:about="#Wheat-based">
+        <rdfs:subClassOf rdf:resource="#Dough" />
+    </owl:Class>
+    <owl:Class rdf:about="#PizzaBase">
+        <rdfs:subClassOf rdf:resource="#Base" />
+    </owl:Class>
+    <owl:Class rdf:about="#FrozenFood">
+        <rdfs:subClassOf rdf:resource="#Product" />
+    </owl:Class>  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#Pizza">
+        <rdf:type rdf:resource="#Dish" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Calzone">
+        <rdf:type rdf:resource="#Dish" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Sauce">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Cheese">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Mozzarella">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Tomatoes">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Anchovies">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Mushrooms">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Onions">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Olives">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Vegetables">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Meat">
+        <rdf:type rdf:resource="#Ingredients" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Baked">
+        <rdf:type rdf:resource="#Preparation" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Cooked">
+        <rdf:type rdf:resource="#Preparation" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Topped">
+        <rdf:type rdf:resource="#Preparation" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Cut">
+        <rdf:type rdf:resource="#Preparation" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Making">
+        <rdf:type rdf:resource="#Preparation" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Variants">
+        <rdf:type rdf:resource="#Variations" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Specialty">
+        <rdf:type rdf:resource="#Variations" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Speciality">
+        <rdf:type rdf:resource="#Variations" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Neapolitan">
+        <rdf:type rdf:resource="#Variations" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Traditional">
+        <rdf:type rdf:resource="#Variations" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Vegan">
+        <rdf:type rdf:resource="#Variations" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Unsliced">
+        <rdf:type rdf:resource="#Variations" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Lunch">
+        <rdf:type rdf:resource="#Course" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Dinner">
+        <rdf:type rdf:resource="#Course" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Hot">
+        <rdf:type rdf:resource="#Temperature" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Slices">
+        <rdf:type rdf:resource="#Form" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Round">
+        <rdf:type rdf:resource="#Form" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Leavened">
+        <rdf:type rdf:resource="#Form" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Flatbread">
+        <rdf:type rdf:resource="#Form" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Frozen">
+        <rdf:type rdf:resource="#Form" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Pizzerias">
+        <rdf:type rdf:resource="#Restaurants" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#SpecialtyRestaurants">
+        <rdf:type rdf:resource="#Restaurants" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Variants">
+        <rdf:type rdf:resource="#Market" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Neapolitan">
+        <rdf:type rdf:resource="#Italian" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Pizza">
+        <rdf:type rdf:resource="#Italian" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Calzone">
+        <rdf:type rdf:resource="#Italian" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Wood-firedOven">
+        <rdf:type rdf:resource="#Oven" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#PizzaDough">
+        <rdf:type rdf:resource="#Wheat-based" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#CalzoneDough">
+        <rdf:type rdf:resource="#Wheat-based" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#LeavenedWheat-basedDough">
+        <rdf:type rdf:resource="#PizzaBase" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FrozenPizza">
+        <rdf:type rdf:resource="#FrozenFood" />
+    </owl:NamedIndividual>
+
+
+</rdf:RDF>

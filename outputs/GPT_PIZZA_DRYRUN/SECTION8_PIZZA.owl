@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#Food" />  <!-- Subclasses -->
+    <owl:Class
+        rdf:about="#BakedGoods">
+        <rdfs:subClassOf rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class
+        rdf:about="#PizzaVarieties">
+        <rdfs:subClassOf rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class
+        rdf:about="#Flatbread">
+        <rdfs:subClassOf rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class
+        rdf:about="#FriedFoods">
+        <rdfs:subClassOf rdf:resource="#Food" />
+    </owl:Class>
+    <owl:Class
+        rdf:about="#ArabicDishes">
+        <rdfs:subClassOf rdf:resource="#Food" />
+    </owl:Class>  <!--
+    Individuals -->
+    <owl:NamedIndividual
+        rdf:about="#PizzaSticks">
+        <rdf:type rdf:resource="#BakedGoods" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#PizzaSnackRolls">
+        <rdf:type rdf:resource="#BakedGoods" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#PizzaBread">
+        <rdf:type rdf:resource="#BakedGoods" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Panizza">
+        <rdf:type rdf:resource="#BakedGoods" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Lahmacun">
+        <rdf:type rdf:resource="#PizzaVarieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ArmenianPizza">
+        <rdf:type rdf:resource="#PizzaVarieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Manakish">
+        <rdf:type
+            rdf:resource="#PizzaVarieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#Calzone">
+        <rdf:type rdf:resource="#PizzaVarieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Lahmajoun">
+        <rdf:type rdf:resource="#PizzaVarieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Pastrmalija">
+        <rdf:type rdf:resource="#PizzaVarieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ZanzibarPizza">
+        <rdf:type rdf:resource="#PizzaVarieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Flammkuchen">
+        <rdf:type
+            rdf:resource="#PizzaVarieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#ArabPizza">
+        <rdf:type rdf:resource="#PizzaVarieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#BoyScoutsPizza">
+        <rdf:type rdf:resource="#PizzaVarieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Pissaladiere">
+        <rdf:type
+            rdf:resource="#PizzaVarieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#Sfiha">
+        <rdf:type rdf:resource="#PizzaVarieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#TurkishPizza">
+        <rdf:type rdf:resource="#PizzaVarieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#PizzaBagel">
+        <rdf:type rdf:resource="#PizzaVarieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Stromboli">
+        <rdf:type rdf:resource="#PizzaVarieties" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Ma\'ujnat">
+        <rdf:type rdf:resource="#ArabicDishes" />
+    </owl:NamedIndividual>
+
+</rdf:RDF>

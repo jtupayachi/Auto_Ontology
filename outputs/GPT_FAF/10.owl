@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology rdf:about="http://www.example.com/ontology" />
+
+    <!-- Data Tabulation Transportation -->
+
+
+    <owl:Class rdf:about="#Data" />
+    <owl:Class rdf:about="#Flows" />
+    <owl:Class rdf:about="#Mode" />
+    <owl:Class rdf:about="#Trade" />
+    <owl:Class rdf:about="#Shipments" />
+    <owl:Class rdf:about="#Destination" />
+    <owl:Class rdf:about="#Transportation" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#FAF5Data">
+        <rdfs:subClassOf rdf:resource="#Data" />
+    </owl:Class>
+    <owl:Class rdf:about="#TotalFlows">
+        <rdfs:subClassOf rdf:resource="#Flows" />
+    </owl:Class>
+    <owl:Class rdf:about="#DomesticFlows">
+        <rdfs:subClassOf rdf:resource="#Flows" />
+    </owl:Class>
+    <owl:Class rdf:about="#ForeignTradeFlows">
+        <rdfs:subClassOf rdf:resource="#Flows" />
+    </owl:Class>
+    <owl:Class rdf:about="#TransportationMode">
+        <rdfs:subClassOf rdf:resource="#Mode" />
+    </owl:Class>
+    <owl:Class rdf:about="#DomesticTrade">
+        <rdfs:subClassOf rdf:resource="#Trade" />
+    </owl:Class>
+    <owl:Class rdf:about="#ForeignTrade">
+        <rdfs:subClassOf rdf:resource="#Trade" />
+    </owl:Class>
+    <owl:Class rdf:about="#DomesticShipments">
+        <rdfs:subClassOf rdf:resource="#Shipments" />
+    </owl:Class>
+    <owl:Class rdf:about="#ForeignShipments">
+        <rdfs:subClassOf rdf:resource="#Shipments" />
+    </owl:Class>
+    <owl:Class rdf:about="#ImportShipments">
+        <rdfs:subClassOf rdf:resource="#Shipments" />
+    </owl:Class>
+    <owl:Class rdf:about="#ExportShipments">
+        <rdfs:subClassOf rdf:resource="#Shipments" />
+    </owl:Class>
+    <owl:Class rdf:about="#DomesticDestination">
+        <rdfs:subClassOf rdf:resource="#Destination" />
+    </owl:Class>
+    <owl:Class rdf:about="#ForeignDestination">
+        <rdfs:subClassOf rdf:resource="#Destination" />
+    </owl:Class>
+    <owl:Class rdf:about="#DomesticTransportation">
+        <rdfs:subClassOf rdf:resource="#Transportation" />
+    </owl:Class>
+    <owl:Class rdf:about="#ForeignTransportation">
+        <rdfs:subClassOf rdf:resource="#Transportation" />
+    </owl:Class>  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#TotalFlows">
+        <rdf:type rdf:resource="#FAF5Data" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#DomesticFlows">
+        <rdf:type rdf:resource="#FAF5Data" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ForeignTradeFlows">
+        <rdf:type rdf:resource="#FAF5Data" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#DomesticShipments">
+        <rdf:type rdf:resource="#TotalFlows" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ForeignShipments">
+        <rdf:type rdf:resource="#TotalFlows" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#DomesticMode">
+        <rdf:type rdf:resource="#TransportationMode" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ForeignMode">
+        <rdf:type rdf:resource="#TransportationMode" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ImportShipments">
+        <rdf:type rdf:resource="#ForeignTradeFlows" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ExportShipments">
+        <rdf:type rdf:resource="#ForeignTradeFlows" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#StateOfExit">
+        <rdf:type rdf:resource="#DomesticDestination" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ZoneOfExit">
+        <rdf:type rdf:resource="#ForeignDestination" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#DomesticMode">
+        <rdf:type rdf:resource="#DomesticTransportation" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ForeignMode">
+        <rdf:type rdf:resource="#ForeignTransportation" />
+    </owl:NamedIndividual>
+
+</rdf:RDF>

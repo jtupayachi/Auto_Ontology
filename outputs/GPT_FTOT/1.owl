@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+
+    <!-- FTOT Introduction -->
+    <!-- Classes -->
+    <owl:Class rdf:about="#DataFormat" />
+    <owl:Class rdf:about="#OptimizationTool" />
+    <owl:Class rdf:about="#InformationType" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#MarkupLanguage">
+        <rdfs:subClassOf rdf:resource="#DataFormat" />
+    </owl:Class>
+    <owl:Class rdf:about="#TransportationOptimizationTool">
+        <rdfs:subClassOf rdf:resource="#OptimizationTool" />
+    </owl:Class>
+    <owl:Class rdf:about="#Commodity-specific">
+        <rdfs:subClassOf rdf:resource="#InformationType" />
+    </owl:Class>  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#XML">
+        <rdf:type rdf:resource="#MarkupLanguage" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FTOT">
+        <rdf:type rdf:resource="#TransportationOptimizationTool" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#CrudeOilInformation">
+        <rdf:type rdf:resource="#Commodity-specific" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#JetFuelInformation">
+        <rdf:type rdf:resource="#Commodity-specific" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#DieselInformation">
+        <rdf:type rdf:resource="#Commodity-specific" />
+    </owl:NamedIndividual>
+
+
+</rdf:RDF>

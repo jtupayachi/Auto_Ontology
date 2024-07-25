@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+        xml:base="http://www.example.com/ontology#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology rdf:about="http://www.example.com/ontology"/>
+
+<!-- Classes -->
+<owl:Class rdf:about="#FreightTransport"/>
+<owl:Class rdf:about="#IntermodalTransportation"/>
+<owl:Class rdf:about="#EnvironmentalImpact"/>
+<owl:Class rdf:about="#GreenhouseGasEmissions"/>
+<owl:Class rdf:about="#Decarbonization"/>
+<owl:Class rdf:about="#EconomicImpact"/>
+<owl:Class rdf:about="#NationalGDP"/>
+<owl:Class rdf:about="#Cost-effectiveness"/>
+<owl:Class rdf:about="#Challenges"/>
+<owl:Class rdf:about="#Research"/>
+<owl:Class rdf:about="#IntermodalTransportOptimization"/>
+
+<!-- Subclasses -->
+<rdfs:subClassOf rdf:resource="#FreightTransport"/>
+<rdfs:subClassOf rdf:resource="#IntermodalTransportation"/>
+<rdfs:subClassOf rdf:resource="#EnvironmentalImpact"/>
+<rdfs:subClassOf rdf:resource="#GreenhouseGasEmissions"/>
+<rdfs:subClassOf rdf:resource="#Decarbonization"/>
+<rdfs:subClassOf rdf:resource="#EconomicImpact"/>
+<rdfs:subClassOf rdf:resource="#NationalGDP"/>
+<rdfs:subClassOf rdf:resource="#Cost-effectiveness"/>
+<rdfs:subClassOf rdf:resource="#Challenges"/>
+<rdfs:subClassOf rdf:resource="#Research"/>
+<rdfs:subClassOf rdf:resource="#IntermodalTransportOptimization"/>
+
+<!-- Properties -->
+<owl:ObjectProperty rdf:about="#hasProperty"/>
+
+<!-- Individuals -->
+<owl:NamedIndividual rdf:about="#Ships">
+<rdf:type rdf:resource="#IntermodalTransportation"/>
+<hasProperty rdf:resource="#ModeOfTransport"/>
+<hasProperty rdf:resource="#CarbonEmissions"/>
+<hasProperty rdf:resource="#SeaTransport"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Trains">
+<rdf:type rdf:resource="#IntermodalTransportation"/>
+<hasProperty rdf:resource="#ModeOfTransport"/>
+<hasProperty rdf:resource="#CarbonEmissions"/>
+<hasProperty rdf:resource="#RailTransport"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Trucks">
+<rdf:type rdf:resource="#IntermodalTransportation"/>
+<hasProperty rdf:resource="#ModeOfTransport"/>
+<hasProperty rdf:resource="#CarbonEmissions"/>
+<hasProperty rdf:resource="#RoadTransport"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IntermodalTransportPhases">
+<rdf:type rdf:resource="#IntermodalTransportation"/>
+<hasProperty rdf:resource="#Pre-haulPhase"/>
+<hasProperty rdf:resource="#Long-haulPhase"/>
+<hasProperty rdf:resource="#End-haulPhase"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CarbonEmissions">
+<rdf:type rdf:resource="#GreenhouseGasEmissions"/>
+<hasProperty rdf:resource="#ResultOfFreightMovement"/>
+<hasProperty rdf:resource="#ContributorToGlobalWarming"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IntermodalTransportationDecarbonization">
+<rdf:type rdf:resource="#Decarbonization"/>
+<hasProperty rdf:resource="#CarbonReduction"/>
+<hasProperty rdf:resource="#UseOfDifferentTransportModes"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#FreightTransportEconomicImpact">
+<rdf:type rdf:resource="#EconomicImpact"/>
+<hasProperty rdf:resource="#ContributorToNationalGDP"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IntermodalTransportationCost-effectiveness">
+<rdf:type rdf:resource="#Cost-effectiveness"/>
+<hasProperty rdf:resource="#CostEqualityOrReduction"/>
+<hasProperty rdf:resource="#EconomicBenefitsOfFreightLogistics"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IntermodalTransportationChallenges">
+<rdf:type rdf:resource="#Challenges"/>
+<hasProperty rdf:resource="#ExtendedTransportTime"/>
+<hasProperty rdf:resource="#IncreasedTravelDistances"/>
+<hasProperty rdf:resource="#SpecificTransportRequirements"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#IntermodalTransportOptimizationResearch">
+<rdf:type rdf:resource="#Research"/>
+<hasProperty rdf:resource="#LiteratureReview"/>
+<hasProperty rdf:resource="#ProblemDescription"/>
+<hasProperty rdf:resource="#OptimizationModel"/>
+<hasProperty rdf:resource="#ComputationalExperiments"/>
+<hasProperty rdf:resource="#SensitivityAnalysis"/>
+<hasProperty rdf:resource="#ConclusionAndFutureResearch"/>
+</owl:NamedIndividual>
+</rdf:RDF>

@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#PizzaToppings" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#MeatToppings">
+        <rdfs:subClassOf rdf:resource="#PizzaToppings" />
+    </owl:Class>
+    <owl:Class rdf:about="#CheeseToppings">
+        <rdfs:subClassOf rdf:resource="#PizzaToppings" />
+    </owl:Class>
+    <owl:Class rdf:about="#SeafoodToppings">
+        <rdfs:subClassOf rdf:resource="#PizzaToppings" />
+    </owl:Class>
+    <owl:Class rdf:about="#VegetableToppings">
+        <rdfs:subClassOf rdf:resource="#PizzaToppings" />
+    </owl:Class>
+    <owl:Class rdf:about="#FruitToppings">
+        <rdfs:subClassOf rdf:resource="#PizzaToppings" />
+    </owl:Class>
+    <owl:Class rdf:about="#SauceToppings">
+        <rdfs:subClassOf rdf:resource="#PizzaToppings" />
+    </owl:Class>
+    <owl:Class rdf:about="#HerbAndSpiceToppings">
+        <rdfs:subClassOf rdf:resource="#PizzaToppings" />
+    </owl:Class>
+    <owl:Class rdf:about="#OtherToppings">
+        <rdfs:subClassOf rdf:resource="#PizzaToppings" />
+    </owl:Class>  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#Ham">
+        <rdf:type rdf:resource="#MeatToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Bacon">
+        <rdf:type rdf:resource="#MeatToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Mozzarella">
+        <rdf:type rdf:resource="#CheeseToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Gorgonzola">
+        <rdf:type rdf:resource="#CheeseToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Cheese">
+        <rdf:type rdf:resource="#CheeseToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Squid">
+        <rdf:type rdf:resource="#SeafoodToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Mussels">
+        <rdf:type rdf:resource="#SeafoodToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Artichokes">
+        <rdf:type rdf:resource="#VegetableToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Onion">
+        <rdf:type rdf:resource="#VegetableToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Mushrooms">
+        <rdf:type rdf:resource="#VegetableToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Tomatoes">
+        <rdf:type rdf:resource="#VegetableToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Pineapple">
+        <rdf:type rdf:resource="#FruitToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#TomatoSauce">
+        <rdf:type rdf:resource="#SauceToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Oregano">
+        <rdf:type rdf:resource="#HerbAndSpiceToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Garlic">
+        <rdf:type rdf:resource="#HerbAndSpiceToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Basil">
+        <rdf:type rdf:resource="#HerbAndSpiceToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Egg">
+        <rdf:type rdf:resource="#OtherToppings" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#OliveOil">
+        <rdf:type rdf:resource="#OtherToppings" />
+    </owl:NamedIndividual>
+
+
+</rdf:RDF>

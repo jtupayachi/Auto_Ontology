@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#Tool" />
+    <owl:Class
+        rdf:about="#OptimizationTool" />
+    <owl:Class rdf:about="#Scenario" />
+    <owl:Class
+        rdf:about="#FreightScenario" />
+    <owl:Class rdf:about="#Material" />
+    <owl:Class
+        rdf:about="#Fuel" />
+    <owl:Class rdf:about="#Organization" />
+    <owl:Class
+        rdf:about="#GovernmentDepartment" />  <!-- Subclasses -->
+    <rdfs:subClassOf rdf:resource="#Tool">
+        <rdfs:subClass
+            rdf:about="#OptimizationTool" />
+    </rdfs:subClassOf>
+    <rdfs:subClassOf
+        rdf:resource="#Scenario">
+        <rdfs:subClass rdf:about="#FreightScenario" />
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Material">
+        <rdfs:subClass rdf:about="#Fuel" />
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Organization">
+        <rdfs:subClass
+            rdf:about="#GovernmentDepartment" />
+    </rdfs:subClassOf>  <!-- Properties -->
+    <owl:ObjectProperty
+        rdf:about="#hasProperty" />  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#FTOT">
+        <rdf:type
+            rdf:resource="#OptimizationTool" />
+        <hasProperty
+            rdf:resource="#OptimizesTransportationOfMaterials" />
+        <hasProperty
+            rdf:resource="#ModelsAndTracksCommoditySpecificInformation" />
+        <hasProperty
+            rdf:resource="#CanTakeIntoAccountConversionOfRawMaterialsToProducts" />
+        <hasProperty
+            rdf:resource="#CanFulfillDownstreamDemand" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#FutureEnergyAndFreightScenarios">
+        <rdf:type rdf:resource="#FreightScenario" />
+        <hasProperty rdf:resource="#ModeledByFTOT" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#CrudeOil">
+        <rdf:type rdf:resource="#Fuel" />
+        <hasProperty
+            rdf:resource="#TransportedAndConvertedByFTOT" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#JetFuel">
+        <rdf:type rdf:resource="#Fuel" />
+        <hasProperty
+            rdf:resource="#TransportedAndConvertedByFTOT" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#Diesel">
+        <rdf:type rdf:resource="#Fuel" />
+        <hasProperty
+            rdf:resource="#TransportedAndConvertedByFTOT" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#USDepartmentOfTransportationsVolpeNationalTransportationSystemsCenter">
+        <rdf:type
+            rdf:resource="#GovernmentDepartment" />
+        <hasProperty
+            rdf:resource="#SupportedTheDevelopmentOfFTOT" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#FederalAviationAdministration">
+        <rdf:type rdf:resource="#GovernmentDepartment" />
+        <hasProperty rdf:resource="#SupportedTheDevelopmentOfFTOT" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#DepartmentOfEnergy">
+        <rdf:type rdf:resource="#GovernmentDepartment" />
+        <hasProperty
+            rdf:resource="#SupportedTheDevelopmentOfFTOT" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual
+        rdf:about="#OfficeOfNavalResearch">
+        <rdf:type rdf:resource="#GovernmentDepartment" />
+        <hasProperty
+            rdf:resource="#SupportedTheDevelopmentOfFTOT" />
+    </owl:NamedIndividual>
+
+
+</rdf:RDF>

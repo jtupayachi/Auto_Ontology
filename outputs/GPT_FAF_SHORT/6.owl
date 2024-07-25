@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+    <!-- Classes -->
+    <owl:Class rdf:about="#FAFDataset" />
+    <owl:Class rdf:about="#ShipmentOrigin" />
+    <owl:Class rdf:about="#ShipmentDestination" />
+    <owl:Class rdf:about="#ShipmentMode" />  <!-- Subclasses -->
+    <owl:SubClassOf>
+        <owl:Class rdf:about="#ShipmentOrigin" />
+        <owl:Class rdf:about="#FAFDataset" />
+    </owl:SubClassOf>
+    <owl:SubClassOf>
+        <owl:Class rdf:about="#ShipmentDestination" />
+        <owl:Class rdf:about="#FAFDataset" />
+    </owl:SubClassOf>
+    <owl:SubClassOf>
+        <owl:Class rdf:about="#ShipmentMode" />
+        <owl:Class rdf:about="#FAFDataset" />
+    </owl:SubClassOf>  <!-- Properties -->
+    <owl:ObjectProperty rdf:about="#hasProperty" />  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#fr_orig">
+        <rdf:type rdf:resource="#ShipmentOrigin" />
+        <hasProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Foreign region of
+            shipment origin</hasProperty>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#dms_orig">
+        <rdf:type rdf:resource="#ShipmentOrigin" />
+        <hasProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAF region or state
+            where a freight movement begins</hasProperty>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#fr_dest">
+        <rdf:type rdf:resource="#ShipmentDestination" />
+        <hasProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Foreign region of
+            shipment destination</hasProperty>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#dms_dest">
+        <rdf:type rdf:resource="#ShipmentDestination" />
+        <hasProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAF region or state
+            where a freight movement ends</hasProperty>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#dms_mode">
+        <rdf:type rdf:resource="#ShipmentMode" />
+        <hasProperty rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode used between
+            domestic origins and destinations</hasProperty>
+    </owl:NamedIndividual>
+</rdf:RDF>

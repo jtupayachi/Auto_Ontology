@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+
+    <!-- SCENARIO -->
+
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#ConfigurationFiles" />
+    <owl:Class rdf:about="#Scenarios" />
+    <owl:Class rdf:about="#ScenarioElements" />
+    <owl:Class rdf:about="#ScenarioTools" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#FTOTConfigurationFiles">
+        <rdfs:subClassOf rdf:resource="#ConfigurationFiles" />
+    </owl:Class>
+    <owl:Class rdf:about="#BatchFiles">
+        <rdfs:subClassOf rdf:resource="#ConfigurationFiles" />
+    </owl:Class>
+    <owl:Class rdf:about="#FTOTScenarios">
+        <rdfs:subClassOf rdf:resource="#Scenarios" />
+    </owl:Class>
+    <owl:Class rdf:about="#ScenarioInputs">
+        <rdfs:subClassOf rdf:resource="#ScenarioElements" />
+    </owl:Class>
+    <owl:Class rdf:about="#ScenarioParameters">
+        <rdfs:subClassOf rdf:resource="#ScenarioElements" />
+    </owl:Class>
+    <owl:Class rdf:about="#TextEditors">
+        <rdfs:subClassOf rdf:resource="#ScenarioTools" />
+    </owl:Class>
+    <owl:Class rdf:about="#ComparisonTools">
+        <rdfs:subClassOf rdf:resource="#ScenarioTools" />
+    </owl:Class>  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#FTOTsQuickStart">
+        <rdf:type rdf:resource="#FTOTConfigurationFiles" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ReferenceScenariosdatasets">
+        <rdf:type rdf:resource="#FTOTConfigurationFiles" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#scenarioXMLfile">
+        <rdf:type rdf:resource="#FTOTConfigurationFiles" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Master_FTOT_Schema.xsd">
+        <rdf:type rdf:resource="#FTOTConfigurationFiles" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#v6_temp_Scenario.xml">
+        <rdf:type rdf:resource="#FTOTConfigurationFiles" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#batfile">
+        <rdf:type rdf:resource="#BatchFiles" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#StandardScenario">
+        <rdf:type rdf:resource="#FTOTScenarios" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#QuickStartScenarios">
+        <rdf:type rdf:resource="#FTOTScenarios" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ReferenceScenarios">
+        <rdf:type rdf:resource="#FTOTScenarios" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#User-specifiedScenarios">
+        <rdf:type rdf:resource="#FTOTScenarios" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Facility-commodityinputCSVfiles">
+        <rdf:type rdf:resource="#ScenarioInputs" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#geospatialinformation">
+        <rdf:type rdf:resource="#ScenarioInputs" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#networkattributes">
+        <rdf:type rdf:resource="#ScenarioInputs" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#facilities">
+        <rdf:type rdf:resource="#ScenarioInputs" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#origins">
+        <rdf:type rdf:resource="#ScenarioInputs" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#processorswaypoints">
+        <rdf:type rdf:resource="#ScenarioInputs" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#destinations">
+        <rdf:type rdf:resource="#ScenarioInputs" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#facilityminimumandmaximumsize">
+        <rdf:type rdf:resource="#ScenarioInputs" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#availablesupplydemandofinputandoutputcommodities">
+        <rdf:type rdf:resource="#ScenarioInputs" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#efficiencyconversiontoproducts">
+        <rdf:type rdf:resource="#ScenarioInputs" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Scenario_Name">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Scenario_Description">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#RMP_Commodity_Data">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Destinations_Commodity_Data">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Rail_Density_Code_NUM_Weight">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Disruption_Data">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Base_RMP_Layer">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Base_Destination_Layer">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Base_Processors_Layer">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Processors_Commodity_Data">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Processors_Candidate_Commodity_Data">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Schedule_Data">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Commodity_Mode_Data">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Default_Units_Solid_Phase">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Default_Units_Liquid_Phase">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#liquid_Railroad_Class_I_Cost">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Rail_Density_Code_7_Weight">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Road_Max_Artificial_Link_Distance">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#liquid_Rail_Short_Haul_Penalty">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Unmet_Demand_Penalty">
+        <rdf:type rdf:resource="#ScenarioParameters" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#WindowsNotepad">
+        <rdf:type rdf:resource="#TextEditors" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#VisualStudio">
+        <rdf:type rdf:resource="#TextEditors" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#BeyondCompare">
+        <rdf:type rdf:resource="#ComparisonTools" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FTOTTools">
+        <rdf:type rdf:resource="#ComparisonTools" />
+    </owl:NamedIndividual>
+
+</rdf:RDF>

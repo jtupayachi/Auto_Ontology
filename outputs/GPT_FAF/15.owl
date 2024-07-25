@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology rdf:about="http://www.example.com/ontology" />
+    <!-- Regions -->
+    <!-- Classes -->
+    <owl:Class rdf:about="#Data" />
+    <owl:Class rdf:about="#Code" />
+    <owl:Class rdf:about="#Region" />
+    <owl:Class rdf:about="#State" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#Code">
+        <rdfs:subClassOf rdf:resource="#Data" />
+    </owl:Class>
+    <owl:Class rdf:about="#Region">
+        <rdfs:subClassOf rdf:resource="#Data" />
+    </owl:Class>
+    <owl:Class rdf:about="#State">
+        <rdfs:subClassOf rdf:resource="#Region" />
+    </owl:Class>  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#CodeFAFRegion">
+        <rdf:type rdf:resource="#Code" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#State">
+        <rdf:type rdf:resource="#Region" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#StateRemainder">
+        <rdf:type rdf:resource="#State" />
+    </owl:NamedIndividual>
+
+</rdf:RDF>

@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+
+
+    <!-- Facility Location GIS Data -->
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#Commodity" />
+    <owl:Class rdf:about="#Facility" />
+    <owl:Class rdf:about="#SupplyChain" />
+    <owl:Class rdf:about="#Pipeline" />
+    <owl:Class rdf:about="#Data" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#RawMaterial">
+        <rdfs:subClassOf rdf:resource="#Commodity" />
+    </owl:Class>
+    <owl:Class rdf:about="#FinishedProduct">
+        <rdfs:subClassOf rdf:resource="#Commodity" />
+    </owl:Class>
+    <owl:Class rdf:about="#RawMaterialProducers">
+        <rdfs:subClassOf rdf:resource="#Facility" />
+    </owl:Class>
+    <owl:Class rdf:about="#Processors">
+        <rdfs:subClassOf rdf:resource="#Facility" />
+    </owl:Class>
+    <owl:Class rdf:about="#Destinations">
+        <rdfs:subClassOf rdf:resource="#Facility" />
+    </owl:Class>
+    <owl:Class rdf:about="#Network">
+        <rdfs:subClassOf rdf:resource="#SupplyChain" />
+    </owl:Class>
+    <owl:Class rdf:about="#ConveyanceSystem">
+        <rdfs:subClassOf rdf:resource="#Pipeline" />
+    </owl:Class>
+    <owl:Class rdf:about="#CSVFiles">
+        <rdfs:subClassOf rdf:resource="#Data" />
+    </owl:Class>  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#AgriculturalProduct">
+        <rdf:type rdf:resource="#RawMaterial" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Oil">
+        <rdf:type rdf:resource="#FinishedProduct" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Gas">
+        <rdf:type rdf:resource="#FinishedProduct" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#SupplyOriginLocations">
+        <rdf:type rdf:resource="#RawMaterialProducers" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Waypoints">
+        <rdf:type rdf:resource="#Processors" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ProcessingLocations">
+        <rdf:type rdf:resource="#Processors" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#LocationsOfDemand">
+        <rdf:type rdf:resource="#Destinations" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Company">
+        <rdf:type rdf:resource="#Network" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Suppliers">
+        <rdf:type rdf:resource="#Network" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#OilPipeline">
+        <rdf:type rdf:resource="#ConveyanceSystem" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#GasPipeline">
+        <rdf:type rdf:resource="#ConveyanceSystem" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Facility-CommodityInformation">
+        <rdf:type rdf:resource="#CSVFiles" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#SupplyDemandAmounts">
+        <rdf:type rdf:resource="#CSVFiles" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ProductSlates">
+        <rdf:type rdf:resource="#CSVFiles" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ConversionEfficiency">
+        <rdf:type rdf:resource="#CSVFiles" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#MinimumMaximumFacilitySize">
+        <rdf:type rdf:resource="#CSVFiles" />
+    </owl:NamedIndividual>
+
+</rdf:RDF>

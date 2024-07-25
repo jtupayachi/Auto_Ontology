@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+    <!-- TRANSPORTATION -->
+    <!-- Classes -->
+    <owl:Class rdf:about="#Software" />
+    <owl:Class rdf:about="#SoftwareVersion" />
+    <owl:Class rdf:about="#LicenseLevel" />
+    <owl:Class rdf:about="#InstallationInstructions" />
+    <owl:Class rdf:about="#Scenario" />
+    <owl:Class rdf:about="#Directory" />
+    <owl:Class rdf:about="#UserGuide" />
+    <owl:Class rdf:about="#Dataset" />
+    <owl:Class rdf:about="#Dashboard" />
+    <owl:Class rdf:about="#URL" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#InstallationSoftware">
+        <rdfs:subClassOf rdf:resource="#Software" />
+    </owl:Class>
+    <owl:Class rdf:about="#PythonPackages">
+        <rdfs:subClassOf rdf:resource="#Software" />
+    </owl:Class>
+    <owl:Class rdf:about="#GitHubRepository">
+        <rdfs:subClassOf rdf:resource="#Software" />
+    </owl:Class>
+    <owl:Class rdf:about="#PythonEnvironment">
+        <rdfs:subClassOf rdf:resource="#Software" />
+    </owl:Class>
+    <owl:Class rdf:about="#DatabaseBrowser">
+        <rdfs:subClassOf rdf:resource="#Software" />
+    </owl:Class>
+    <owl:Class rdf:about="#OptimizationSolvers">
+        <rdfs:subClassOf rdf:resource="#Software" />
+    </owl:Class>
+    <owl:Class rdf:about="#ScenarioConfigurationFile">
+        <rdfs:subClassOf rdf:resource="#Software" />
+    </owl:Class>
+    <owl:Class rdf:about="#FTOTVersion">
+        <rdfs:subClassOf rdf:resource="#SoftwareVersion" />
+    </owl:Class>
+    <owl:Class rdf:about="#ArcGISProVersion">
+        <rdfs:subClassOf rdf:resource="#SoftwareVersion" />
+    </owl:Class>
+    <owl:Class rdf:about="#PythonVersion">
+        <rdfs:subClassOf rdf:resource="#SoftwareVersion" />
+    </owl:Class>
+    <owl:Class rdf:about="#TableauDesktopVersion">
+        <rdfs:subClassOf rdf:resource="#SoftwareVersion" />
+    </owl:Class>
+    <owl:Class rdf:about="#ArcGISProLicenseLevel">
+        <rdfs:subClassOf rdf:resource="#LicenseLevel" />
+    </owl:Class>
+    <owl:Class rdf:about="#FTOTInstallationInstructions">
+        <rdfs:subClassOf rdf:resource="#InstallationInstructions" />
+    </owl:Class>
+    <owl:Class rdf:about="#ArcGISProInstallationInstructions">
+        <rdfs:subClassOf rdf:resource="#InstallationInstructions" />
+    </owl:Class>
+    <owl:Class rdf:about="#TableauInstallationInstructions">
+        <rdfs:subClassOf rdf:resource="#InstallationInstructions" />
+    </owl:Class>
+    <owl:Class rdf:about="#FTOTScenario">
+        <rdfs:subClassOf rdf:resource="#Scenario" />
+    </owl:Class>
+    <owl:Class rdf:about="#LocalMachineDirectory">
+        <rdfs:subClassOf rdf:resource="#Directory" />
+    </owl:Class>
+    <owl:Class rdf:about="#FTOTUserGuide">
+        <rdfs:subClassOf rdf:resource="#UserGuide" />
+    </owl:Class>
+    <owl:Class rdf:about="#FTOTDataset">
+        <rdfs:subClassOf rdf:resource="#Dataset" />
+    </owl:Class>
+    <owl:Class rdf:about="#TableauDashboard">
+        <rdfs:subClassOf rdf:resource="#Dashboard" />
+    </owl:Class>
+    <owl:Class rdf:about="#GitHubURL">
+        <rdfs:subClassOf rdf:resource="#URL" />
+    </owl:Class>
+    <owl:Class rdf:about="#DownloadURL">
+        <rdfs:subClassOf rdf:resource="#URL" />
+    </owl:Class>  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#ESRIArcGISPro">
+        <rdf:type rdf:resource="#InstallationSoftware" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#SQLite">
+        <rdf:type rdf:resource="#InstallationSoftware" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#TableauDesktop">
+        <rdf:type rdf:resource="#InstallationSoftware" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#TableauReader">
+        <rdf:type rdf:resource="#InstallationSoftware" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#NetworkX">
+        <rdf:type rdf:resource="#PythonPackages" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#PuLP">
+        <rdf:type rdf:resource="#PythonPackages" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Lxml">
+        <rdf:type rdf:resource="#PythonPackages" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Pint">
+        <rdf:type rdf:resource="#PythonPackages" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Imageio">
+        <rdf:type rdf:resource="#PythonPackages" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FTOTPublic">
+        <rdf:type rdf:resource="#GitHubRepository" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FTOTPythonEnvironment">
+        <rdf:type rdf:resource="#PythonEnvironment" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ArcGISProDefaultPythonEnvironment">
+        <rdf:type rdf:resource="#PythonEnvironment" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#DBBrowserForSQLite">
+        <rdf:type rdf:resource="#DatabaseBrowser" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#COINOR">
+        <rdf:type rdf:resource="#OptimizationSolvers" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FTOTScenarioConfigurationFile">
+        <rdf:type rdf:resource="#ScenarioConfigurationFile" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FTOTVersion2022.2">
+        <rdf:type rdf:resource="#FTOTVersion" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ArcGISProVersion2.6">
+        <rdf:type rdf:resource="#ArcGISProVersion" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#PythonVersion3.6">
+        <rdf:type rdf:resource="#PythonVersion" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#TableauDesktopv2019.4">
+        <rdf:type rdf:resource="#TableauDesktopVersion" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Basic">
+        <rdf:type rdf:resource="#ArcGISProLicenseLevel" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Standard">
+        <rdf:type rdf:resource="#ArcGISProLicenseLevel" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Advanced">
+        <rdf:type rdf:resource="#ArcGISProLicenseLevel" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FTOTInstallationInstructionsFoundBelow">
+        <rdf:type rdf:resource="#FTOTInstallationInstructions" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#InstallingESRIArcGISPro">
+        <rdf:type rdf:resource="#ArcGISProInstallationInstructions" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#InstallingTableau">
+        <rdf:type rdf:resource="#TableauInstallationInstructions" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ScenarioInFTOT">
+        <rdf:type rdf:resource="#FTOTScenario" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FTOTScenarioConfigurationFile">
+        <rdf:type rdf:resource="#FTOTScenario" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#C:\\\\FTOT">
+        <rdf:type rdf:resource="#LocalMachineDirectory" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FTOTUserGuidePublicReleaseVersion2022.2">
+        <rdf:type rdf:resource="#FTOTUserGuide" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FTOTDatasets">
+        <rdf:type rdf:resource="#FTOTDataset" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#DocumentationAndScenarioDataset">
+        <rdf:type rdf:resource="#FTOTDataset" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#TableauDashboard">
+        <rdf:type rdf:resource="#TableauDashboard" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#PublicGitHubRepositoryURL">
+        <rdf:type rdf:resource="#GitHubURL" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#DownloadZIPFunctionalityOnGitHubURL">
+        <rdf:type rdf:resource="#DownloadURL" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#TableauReaderDownloadURL">
+        <rdf:type rdf:resource="#DownloadURL" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#DocumentationAndScenarioDatasetDownloadURL">
+        <rdf:type rdf:resource="#DownloadURL" />
+    </owl:NamedIndividual>
+
+
+</rdf:RDF>

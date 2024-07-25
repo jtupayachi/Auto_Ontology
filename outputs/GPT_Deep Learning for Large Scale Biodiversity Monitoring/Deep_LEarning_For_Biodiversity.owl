@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+            <rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+                    xml:base="http://www.example.com/ontology#"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+                <!-- Ontology Declaration -->
+                <owl:Ontology rdf:about="http://www.example.com/ontology"/>
+
+            <!-- Classes -->
+<owl:Class rdf:about="#DeepLearning"/>
+
+<!-- Subclasses -->
+<owl:Class rdf:about="#Application">
+    <rdfs:subClassOf rdf:resource="#DeepLearning"/>
+</owl:Class>
+<owl:Class rdf:about="#Data">
+    <rdfs:subClassOf rdf:resource="#DeepLearning"/>
+</owl:Class>
+<owl:Class rdf:about="#Challenges">
+    <rdfs:subClassOf rdf:resource="#DeepLearning"/>
+</owl:Class>
+<owl:Class rdf:about="#Benefits">
+    <rdfs:subClassOf rdf:resource="#DeepLearning"/>
+</owl:Class>
+<owl:Class rdf:about="#Tools">
+    <rdfs:subClassOf rdf:resource="#DeepLearning"/>
+</owl:Class>
+<owl:Class rdf:about="#Species">
+    <rdfs:subClassOf rdf:resource="#DeepLearning"/>
+</owl:Class>
+<owl:Class rdf:about="#Organizations">
+    <rdfs:subClassOf rdf:resource="#DeepLearning"/>
+</owl:Class>
+<owl:Class rdf:about="#Locations">
+    <rdfs:subClassOf rdf:resource="#DeepLearning"/>
+</owl:Class>
+<owl:Class rdf:about="#Events">
+    <rdfs:subClassOf rdf:resource="#DeepLearning"/>
+</owl:Class>
+<owl:Class rdf:about="#Concepts">
+    <rdfs:subClassOf rdf:resource="#DeepLearning"/>
+</owl:Class>
+<owl:Class rdf:about="#Techniques">
+    <rdfs:subClassOf rdf:resource="#DeepLearning"/>
+</owl:Class>
+
+<!-- Individuals -->
+<owl:NamedIndividual rdf:about="#AutomatedMonitoring">
+    <rdf:type rdf:resource="#Application"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#AutomatedRecognition">
+    <rdf:type rdf:resource="#Application"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#AutomatedInference">
+    <rdf:type rdf:resource="#Application"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#LabeledData">
+    <rdf:type rdf:resource="#Data"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#ArchivedData">
+    <rdf:type rdf:resource="#Data"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#DetectionOfRareSpecies">
+    <rdf:type rdf:resource="#Challenges"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#DetectionOfInvasiveSpecies">
+    <rdf:type rdf:resource="#Challenges"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#EstimationOfPopulationTrends">
+    <rdf:type rdf:resource="#Challenges"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#BiosecurityMonitoring">
+    <rdf:type rdf:resource="#Challenges"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#IncreasedSurveyEffort">
+    <rdf:type rdf:resource="#Benefits"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#IncreasedStatisticalPower">
+    <rdf:type rdf:resource="#Benefits"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#ReproducibilityOfSurveys">
+    <rdf:type rdf:resource="#Benefits"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#CorrectionOfErrors">
+    <rdf:type rdf:resource="#Benefits"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#NewQuestions">
+    <rdf:type rdf:resource="#Benefits"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#SmallCheapSensors">
+    <rdf:type rdf:resource="#Tools"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#AcousticMonitoring">
+    <rdf:type rdf:resource="#Tools"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Time-lapseImages">
+    <rdf:type rdf:resource="#Tools"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#EndangeredSpecies">
+    <rdf:type rdf:resource="#Species"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#IntroducedSpecies">
+    <rdf:type rdf:resource="#Species"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#ThreatenedSeabird">
+    <rdf:type rdf:resource="#Species"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#BryansShearwater">
+    <rdf:type rdf:resource="#Species"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#BrownTreeSnake">
+    <rdf:type rdf:resource="#Species"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#U.S.GeologicalSurvey">
+    <rdf:type rdf:resource="#Organizations"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#ChannelIslandsNationalPark">
+    <rdf:type rdf:resource="#Organizations"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#InternationalUnionForConservationRedList">
+    <rdf:type rdf:resource="#Organizations"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#IslandOfGuam">
+    <rdf:type rdf:resource="#Locations"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Micronesia">
+    <rdf:type rdf:resource="#Locations"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#PapuaNewGuinea">
+    <rdf:type rdf:resource="#Locations"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#AnacapaIsland">
+    <rdf:type rdf:resource="#Locations"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Japan">
+    <rdf:type rdf:resource="#Locations"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#WorldWarII">
+    <rdf:type rdf:resource="#Events"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#RemovalOfInvasivePredators">
+    <rdf:type rdf:resource="#Events"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#DiscoveryOfNewSpecies">
+    <rdf:type rdf:resource="#Events"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#BiodiversityMonitoring">
+    <rdf:type rdf:resource="#Concepts"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#RapidResponseTeams">
+    <rdf:type rdf:resource="#Concepts"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#ManagementActions">
+    <rdf:type rdf:resource="#Concepts"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#PopulationTrends">
+    <rdf:type rdf:resource="#Concepts"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#Extinction">
+    <rdf:type rdf:resource="#Concepts"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#AutomatedSensors">
+    <rdf:type rdf:resource="#Techniques"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#AutomatedApproaches">
+    <rdf:type rdf:resource="#Techniques"/>
+</owl:NamedIndividual>
+<owl:NamedIndividual rdf:about="#DL">
+    <rdf:type rdf:resource="#Techniques"/>
+</owl:NamedIndividual>
+        </rdf:RDF>
+        

@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology rdf:about="http://www.example.com/ontology" />
+    <!-- Commodity Codes -->
+
+
+    <!-- Classes -->
+    <owl:Class rdf:about="#FreightAnalysisFramework" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#Transportation">
+        <rdfs:subClassOf rdf:resource="#FreightAnalysisFramework" />
+    </owl:Class>
+    <owl:Class rdf:about="#Fuel">
+        <rdfs:subClassOf rdf:resource="#FreightAnalysisFramework" />
+    </owl:Class>
+    <owl:Class rdf:about="#Equipment">
+        <rdfs:subClassOf rdf:resource="#FreightAnalysisFramework" />
+    </owl:Class>
+    <owl:Class rdf:about="#Products">
+        <rdfs:subClassOf rdf:resource="#FreightAnalysisFramework" />
+    </owl:Class>
+    <owl:Class rdf:about="#Components">
+        <rdfs:subClassOf rdf:resource="#FreightAnalysisFramework" />
+    </owl:Class>
+    <owl:Class rdf:about="#Chemicals">
+        <rdfs:subClassOf rdf:resource="#FreightAnalysisFramework" />
+    </owl:Class>
+    <owl:Class rdf:about="#Pharmaceutical">
+        <rdfs:subClassOf rdf:resource="#FreightAnalysisFramework" />
+    </owl:Class>  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#Vehicles">
+        <rdf:type rdf:resource="#Transportation" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Motorized">
+        <rdf:type rdf:resource="#Transportation" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Aviation">
+        <rdf:type rdf:resource="#Transportation" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Diesel">
+        <rdf:type rdf:resource="#Fuel" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Gasoline">
+        <rdf:type rdf:resource="#Fuel" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Biodiesel">
+        <rdf:type rdf:resource="#Fuel" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Kerosene">
+        <rdf:type rdf:resource="#Fuel" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Ethanol">
+        <rdf:type rdf:resource="#Fuel" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Machinery">
+        <rdf:type rdf:resource="#Equipment" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#OfficeEquipment">
+        <rdf:type rdf:resource="#Equipment" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#PrecisionInstruments">
+        <rdf:type rdf:resource="#Equipment" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#LightingApparatus">
+        <rdf:type rdf:resource="#Equipment" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Plastics">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Paper">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Paperboard">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Logs">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Wood">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Ores">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Grains">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Seafood">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Meat">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Poultry">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Fish">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Foodstuffs">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Beverages">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Alcoholic">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Tobacco">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Fertilizers">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Coal">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Rubber">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Textiles">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Leather">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Non-Metallic">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Metallic">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Fittings">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Electrical">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Oils">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Animals">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Feed">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Forage">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Miscellaneous">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Waste">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Scrap">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Supports">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Base">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Mixed">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Preparations">
+        <rdf:type rdf:resource="#Products" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Electronic">
+        <rdf:type rdf:resource="#Components" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Metal">
+        <rdf:type rdf:resource="#Components" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Petroleum">
+        <rdf:type rdf:resource="#Chemicals" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Agricultural">
+        <rdf:type rdf:resource="#Chemicals" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#Manufactured">
+        <rdf:type rdf:resource="#Chemicals" />
+    </owl:NamedIndividual>
+
+
+</rdf:RDF>

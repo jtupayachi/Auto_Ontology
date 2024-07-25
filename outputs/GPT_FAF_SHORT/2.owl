@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+    xml:base="http://www.example.com/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+    <!-- Ontology Declaration -->
+    <owl:Ontology
+        rdf:about="http://www.example.com/ontology" />
+    <!-- Classes -->
+    <owl:Class rdf:about="#Data" />
+    <owl:Class rdf:about="#Organization" />
+    <owl:Class rdf:about="#Methodology" />
+    <owl:Class rdf:about="#Region" />
+    <owl:Class rdf:about="#Database" />
+    <owl:Class rdf:about="#HistoricalData" />
+    <owl:Class rdf:about="#StatisticalData" />
+    <owl:Class rdf:about="#TransportationData" />
+    <owl:Class rdf:about="#DomesticData" />
+    <owl:Class rdf:about="#Tabulation" />
+    <owl:Class rdf:about="#Access" />  <!-- Subclasses -->
+    <owl:Class rdf:about="#FAF5Data">
+        <rdfs:subClassOf rdf:resource="#Data" />
+    </owl:Class>
+    <owl:Class rdf:about="#FederalOrganization">
+        <rdfs:subClassOf rdf:resource="#Organization" />
+    </owl:Class>
+    <owl:Class rdf:about="#Sampling">
+        <rdfs:subClassOf rdf:resource="#Methodology" />
+    </owl:Class>
+    <owl:Class rdf:about="#MetropolitanArea">
+        <rdfs:subClassOf rdf:resource="#Region" />
+    </owl:Class>
+    <owl:Class rdf:about="#State">
+        <rdfs:subClassOf rdf:resource="#Region" />
+    </owl:Class>  <!-- Properties -->
+    <owl:ObjectProperty rdf:about="#hasProperty" />  <!-- Individuals -->
+    <owl:NamedIndividual rdf:about="#FAF5RegionalODCMDataset">
+        <rdf:type rdf:resource="#FAF5Data" />
+        <hasProperty rdf:resource="#AccessibleViaFHWAorBTS" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FAF5DataTabulationTool">
+        <rdf:type rdf:resource="#FAF5Data" />
+        <hasProperty rdf:resource="#AvailableInMicrosoftAccessAndCSVFormats" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FAF5DomesticRegionLevelDatasets">
+        <rdf:type rdf:resource="#FAF5Data" />
+        <hasProperty rdf:resource="#ProvidesInformationForStates" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FederalHighwayAdministration">
+        <rdf:type rdf:resource="#FederalOrganization" />
+        <hasProperty rdf:resource="#ProvidesAccessToFAF5Data" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#BureauOfTransportationStatistics">
+        <rdf:type rdf:resource="#FederalOrganization" />
+        <hasProperty rdf:resource="#ProvidesAccessToFAF5Data" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#CommodityFlowSurvey">
+        <rdf:type rdf:resource="#Sampling" />
+        <hasProperty rdf:resource="#UsedToSupportTheSamplingProceduresInTheFAFRegion" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#MetropolitanStatisticalAreas">
+        <rdf:type rdf:resource="#MetropolitanArea" />
+        <hasProperty rdf:resource="#DefinedByTheOfficeOfManagementAndBudget" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#ConsolidatedStatisticalAreas">
+        <rdf:type rdf:resource="#MetropolitanArea" />
+        <hasProperty rdf:resource="#CanBecomeASeparateFAFRegionIfLargeEnough" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#50States">
+        <rdf:type rdf:resource="#State" />
+        <hasProperty rdf:resource="#IncludedInStateLevelDatasetsAndProducts" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#DistrictOfColumbia">
+        <rdf:type rdf:resource="#State" />
+        <hasProperty rdf:resource="#IncludedInStateLevelDatasetsAndProducts" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#OriginDestinationCommodityModeDatabase">
+        <rdf:type rdf:resource="#Database" />
+        <hasProperty rdf:resource="#ContainsFAF5Datasets" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FAFRegionalDatabase">
+        <rdf:type rdf:resource="#Database" />
+        <hasProperty
+            rdf:resource="#ProvidesFreightFlowInformationBasedOnFAF5MethodologyAndDataSources" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#StateLevelDatabase">
+        <rdf:type rdf:resource="#Database" />
+        <hasProperty rdf:resource="#ContainsFAF5Datasets" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#DataForUpdatedHistoricalBaseYears">
+        <rdf:type rdf:resource="#HistoricalData" />
+        <hasProperty rdf:resource="#ProvidesAMoreConsistentTimeSeriesOfFreightFlowInformation" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FreightFlowInformation">
+        <rdf:type rdf:resource="#StatisticalData" />
+        <hasProperty rdf:resource="#BasedOnFAF5MethodologyAndDataSources" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FreightFlowInformation">
+        <rdf:type rdf:resource="#TransportationData" />
+        <hasProperty rdf:resource="#BasedOnFAF5MethodologyAndDataSources" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FAF5DomesticRegionLevelDatasets">
+        <rdf:type rdf:resource="#DomesticData" />
+        <hasProperty rdf:resource="#ProvidesInformationForStates" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#FAF5DataTabulationTool">
+        <rdf:type rdf:resource="#Tabulation" />
+        <hasProperty rdf:resource="#UsedToCustomizeDatasets" />
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="#AccessingFAF5Data">
+        <rdf:type rdf:resource="#Access" />
+        <hasProperty
+            rdf:resource="#ViaFederalHighwayAdministrationOrBureauOfTransportationStatistics" />
+    </owl:NamedIndividual>
+
+</rdf:RDF>
