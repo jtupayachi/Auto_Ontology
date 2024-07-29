@@ -46,9 +46,10 @@ RECOIL_Auto_Onotology/exec_gptapi_flow.sh
 ```
 
 # Outputs
-## Automated Ontology
-![Ontology Toppings Outer](figures/SECTION1_PIZZA.png)
-![Ontology Toppings Inner](figures/ONTOLOGY_TOPPINGS.png)
+## Automated Ontology Outer
+![Ontology Toppings Outer](figures/ONTOLOGY_TOPPINGS.png)
+## Automated Ontology Inner
+![Ontology Toppings Inner](figures/SECTION1_PIZZA.png)
 
 
 <!-- # New RAG + LLM Workflow
