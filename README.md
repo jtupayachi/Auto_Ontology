@@ -39,7 +39,7 @@ https://drive.google.com/drive/folders/1U7H-KN-kqNMRBfjr77V1KOPgXsqSJQWr?usp=sha
 
 ``` -->
 
-# Intial LLM GPT-4 Workflow
+# LLM GPT-4 Workflow
 Please Execute:
 ```
 RECOIL_Auto_Onotology/exec_gptapi_flow.sh
