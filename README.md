@@ -46,9 +46,9 @@ RECOIL_Auto_Onotology/exec_gptapi_flow.sh
 ```
 
 # Outputs
-## Automated Ontology Outer
+## Automated Ontology Outer Section
 ![Ontology Toppings Outer](figures/ONTOLOGY_TOPPINGS.png)
-## Automated Ontology Inner
+## Automated Ontology Inner Section
 ![Ontology Toppings Inner](figures/SECTION1_PIZZA.png)
 
 
