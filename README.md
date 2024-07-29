@@ -48,7 +48,7 @@ RECOIL_Auto_Onotology/exec_gptapi_flow.sh
 # Outputs
 ## Automated Ontology
 
-![Ontology Toppings](/Users/user/Auto_Onotology/figures/ONTOLOGY_TOPPINGS.png)
+![Ontology Toppings](figures/ONTOLOGY_TOPPINGS.png)
 
 
 <!-- # New RAG + LLM Workflow
