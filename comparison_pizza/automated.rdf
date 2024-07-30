@@ -294,10 +294,34 @@
     
 
 
+    <!-- http://www.example.com/ontology#Artichokes -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Artichokes">
+        <rdf:type rdf:resource="http://www.example.com/ontology#VegetableToppings"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Bacon -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Bacon">
+        <rdf:type rdf:resource="http://www.example.com/ontology#MeatToppings"/>
+    </NamedIndividual>
+    
+
+
     <!-- http://www.example.com/ontology#Baked -->
 
     <NamedIndividual rdf:about="http://www.example.com/ontology#Baked">
         <rdf:type rdf:resource="http://www.example.com/ontology#Preparation"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Basil -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Basil">
+        <rdf:type rdf:resource="http://www.example.com/ontology#HerbAndSpiceToppings"/>
     </NamedIndividual>
     
 
@@ -351,6 +375,14 @@
     
 
 
+    <!-- http://www.example.com/ontology#Egg -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Egg">
+        <rdf:type rdf:resource="http://www.example.com/ontology#OtherToppings"/>
+    </NamedIndividual>
+    
+
+
     <!-- http://www.example.com/ontology#Flatbread -->
 
     <NamedIndividual rdf:about="http://www.example.com/ontology#Flatbread">
@@ -371,6 +403,30 @@
 
     <NamedIndividual rdf:about="http://www.example.com/ontology#FrozenPizza">
         <rdf:type rdf:resource="http://www.example.com/ontology#FrozenFood"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Garlic -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Garlic">
+        <rdf:type rdf:resource="http://www.example.com/ontology#HerbAndSpiceToppings"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Gorgonzola -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Gorgonzola">
+        <rdf:type rdf:resource="http://www.example.com/ontology#CheeseToppings"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Ham -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Ham">
+        <rdf:type rdf:resource="http://www.example.com/ontology#MeatToppings"/>
     </NamedIndividual>
     
 
@@ -426,6 +482,7 @@
     <!-- http://www.example.com/ontology#Mozzarella -->
 
     <NamedIndividual rdf:about="http://www.example.com/ontology#Mozzarella">
+        <rdf:type rdf:resource="http://www.example.com/ontology#CheeseToppings"/>
         <rdf:type rdf:resource="http://www.example.com/ontology#Ingredients"/>
     </NamedIndividual>
     
@@ -435,7 +492,14 @@
 
     <NamedIndividual rdf:about="http://www.example.com/ontology#Mushrooms">
         <rdf:type rdf:resource="http://www.example.com/ontology#Ingredients"/>
+        <rdf:type rdf:resource="http://www.example.com/ontology#VegetableToppings"/>
     </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Mussels -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Mussels"/>
     
 
 
@@ -444,6 +508,14 @@
     <NamedIndividual rdf:about="http://www.example.com/ontology#Neapolitan">
         <rdf:type rdf:resource="http://www.example.com/ontology#Italian"/>
         <rdf:type rdf:resource="http://www.example.com/ontology#Variations"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#OliveOil -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#OliveOil">
+        <rdf:type rdf:resource="http://www.example.com/ontology#OtherToppings"/>
     </NamedIndividual>
     
 
@@ -459,7 +531,25 @@
     <!-- http://www.example.com/ontology#Onions -->
 
     <NamedIndividual rdf:about="http://www.example.com/ontology#Onions">
+        <rdf:type rdf:resource="http://www.example.com/ontology#CheeseToppings"/>
         <rdf:type rdf:resource="http://www.example.com/ontology#Ingredients"/>
+        <rdf:type rdf:resource="http://www.example.com/ontology#VegetableToppings"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Oregano -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Oregano">
+        <rdf:type rdf:resource="http://www.example.com/ontology#HerbAndSpiceToppings"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#Pineapple -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Pineapple">
+        <rdf:type rdf:resource="http://www.example.com/ontology#FruitToppings"/>
     </NamedIndividual>
     
 
@@ -521,7 +611,7 @@
     
 
 
-    <!-- http://www.example.com/ontology#  -->
+    <!-- http://www.example.com/ontology#Specialty -->
 
     <NamedIndividual rdf:about="http://www.example.com/ontology#Specialty">
         <rdf:type rdf:resource="http://www.example.com/ontology#Variations"/>
@@ -537,10 +627,27 @@
     
 
 
+    <!-- http://www.example.com/ontology#Squid -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#Squid">
+        <rdf:type rdf:resource="http://www.example.com/ontology#SeafoodToppings"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.example.com/ontology#TomatoSauce -->
+
+    <NamedIndividual rdf:about="http://www.example.com/ontology#TomatoSauce">
+        <rdf:type rdf:resource="http://www.example.com/ontology#SauceToppings"/>
+    </NamedIndividual>
+    
+
+
     <!-- http://www.example.com/ontology#Tomatoes -->
 
     <NamedIndividual rdf:about="http://www.example.com/ontology#Tomatoes">
         <rdf:type rdf:resource="http://www.example.com/ontology#Ingredients"/>
+        <rdf:type rdf:resource="http://www.example.com/ontology#VegetableToppings"/>
     </NamedIndividual>
     
 
@@ -604,3 +711,4 @@
 
 
 <!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
